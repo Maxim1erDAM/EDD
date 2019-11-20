@@ -1,5 +1,5 @@
 # **1ER. Desarrotllament D'Aplicacions Multiplataforma. EDD. Entorns de Desenvolupament.**
-# **-DOCKER, CONTENIDORS,SERVIDOR COLLABNET SUBVERSION EDGE I GIT-**
+# **-DOCKER, CONTENIDORS, SERVIDOR COLLABNET SUBVERSION EDGE I GIT-**
 #    **-Activitat pràctica-**
 
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
@@ -10,7 +10,7 @@
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
 
-## ***`1.¿Que és Docker? Docker es una aplicació de códi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aísla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
+## ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
 
 ## ***`2.¿Que és Subversion Edge? CollabNet Subversion Edge es la distribució principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion i ViewVC, així como una potent interfície d'usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d'usuari centralitzat e intuitiu.`***
@@ -145,7 +145,8 @@ $sudo apt-cache policy docker-ce
 ## `Comandos i configuració de docker`
  
 >***`>Iniciem sessió amb usuari root`***
- >alumne@alumne-VirtualBox:~$ su root
+ >alumne@alumne-VirtualBox:~$ 
+ su root
 Contraseña: ***`<Así afegim la contraseña de root`***
 root@alumne-VirtualBox:/home/alumne# 
 
@@ -223,7 +224,7 @@ docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr
 
 >***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, és on el CSVN guarda tota la informació que genera, la sincronitzarem amb el volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigixen de el contenidor a la maquina local.`***
 
->$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080 -v /srv/svn-data:/opt/csvn/data --name svn-server mamohr/subversion-edge
+$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080 -v /srv/svn-data:/opt/csvn/data --name svn-server mamohr/subversion-edge
 
 
 
