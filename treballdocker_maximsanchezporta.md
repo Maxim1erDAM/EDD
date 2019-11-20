@@ -59,26 +59,26 @@
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
 
 >`USUARIO@USUARIO-VirtualBox:
->$sudo passwd root`
+$sudo passwd root`
 
->`>root >root` ***`<Así afegim la contraseña de rooti la confirmem`***
+`>root >root` ***`<Así afegim la contraseña de rooti la confirmem`***
 
 >***`En el meu cas`***
 
->alumne@alumne-VirtualBox:
->$sudo passwd root
+alumne@alumne-VirtualBox:
+$sudo passwd root
 
->`>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
+`>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
 
 
 
 >***`Iniciar sessió amb root`***
 
->alumne@alumne-VirtualBox:$
+alumne@alumne-VirtualBox:$
  
->su root
+su root
 
->Contraseña: ***`<Así afegim la contraseña de root`***
+Contraseña: ***`<Así afegim la contraseña de root`***
 
 >root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`***
 
