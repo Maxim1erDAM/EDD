@@ -236,7 +236,7 @@ $docker rm "codi del contenidor"
 
 $docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr/subversion-edge
 
->***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, és on el CSVN guarda tota la informació que genera, la sincronitzarem amb el volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigixen de el contenidor a la maquina local.`***
+>***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, és on el Servidor Subversion guarda tota la informació que genera, la sincronitzarem amb el volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigirán del contenidor a la maquina local.`***
 
 $docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080 -v /srv/svn-data:/opt/csvn/data --name svn-server mamohr/subversion-edge
 
