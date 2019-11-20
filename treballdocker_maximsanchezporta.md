@@ -1,11 +1,11 @@
 # **1ER. Desarrotllament D'Aplicacions Multiplataforma. Entorns de desenvolupament**
 # **TEMA 1.-DOCKER, CONTENIDORS Y SERVIDOR COLLABNET SUBVERSION EDGE-**
-### **-Activitat pràctica-**
+#    **-Activitat pràctica-**
 
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
 ![Programació(Wikipedia)](/imatges/imatge0.png) 
-#### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuides. 
+##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuides. 
 
  
   
@@ -13,29 +13,29 @@
     
      
       
-## Ejercici sobre Docker y servidor de CollabNet Subversion Edge.
+# Ejercici sobre Docker y servidor de CollabNet Subversion Edge.
 
 
-###***`1.¿Que és Docker? Docker es una aplicació de códi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aísla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux y Mac, per tant es multiplataforma.`***
+## ***`1.¿Que és Docker? Docker es una aplicació de códi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aísla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux y Mac, per tant es multiplataforma.`***
 
 
-### ***`2.¿Que és Subversion Edge? CollabNet Subversion Edge es la distribució principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion y ViewVC, així como una potent interfície d'usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d'usuari centralitzat e intuitiu.`***
+## ***`2.¿Que és Subversion Edge? CollabNet Subversion Edge es la distribució principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion y ViewVC, així como una potent interfície d'usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d'usuari centralitzat e intuitiu.`***
 
 
-#### -Configurar VirtualBox.
+## -Configurar VirtualBox.
 
 >***`*En VirtualBox, ((ctrl+alt DERECHO)+c) configura la finestra o maquina virtual.  `***  
-####`En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
-> ***`((ctrl+alt DERECHO)+c)`***+***`Dispositivos>Portapapeles Compartido> Bidireccional`***+***` Dispositivos>Arrastrar y Soltar> Bidireccional`***
+### `-En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
+> ***`((ctrl+alt DERECHO)+c)`+`Dispositivos>Portapapeles Compartido> Bidireccional`+` Dispositivos>Arrastrar y Soltar> Bidireccional`***
 
-#### -Com activar el portafolis i "Arrastrar y soltar".
+## -Com activar el portafolis i "Arrastrar y soltar".
 
 ![Imatge](/imatges/imatge6.png)
 
-``Asignem "Bidireccional" en els dos casos.``
+`Asignem "Bidireccional" en els dos casos.`
 
 
- #### -Instalar "Guest Additions".
+## -Instalar "Guest Additions".
 
 ``Fem clic en "Insertar imagen de CD de las <<Guest Additions>>". Es montará la unitat de cdrom amb la ISO corresponent.``
 
@@ -46,7 +46,7 @@
 >***`alumne@alumne-VirtualBox:/media/alumne$ `*** sudo sh VBoxGuestAdditions.run 
 
 
- #### -Ferramentes per a la máquina virtual.
+ ##  -Ferramentes per a la máquina virtual.
 
 
 >***`*Opcional. Instalar editor de text Vim`***
@@ -125,8 +125,8 @@ $sudo apt install docker-ce
 >***`Actualitzar cache de la politica o privacitat de docker`***
 $sudo apt-cache policy docker-ce
 
-##Comandos y configuración de docker
-####
+## `Comandos y configuración de docker`
+ 
 >***`>Iniciem sessió como root`***
  >alumne@alumne-VirtualBox:~$ su root
 Contraseña: ***`<Así afegim la contraseña de root`***
@@ -222,11 +222,11 @@ docker stop svn-server
 >***`Activar el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor) `***
 docker start svn-server
 
-####Accedim al servidor en amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.
+## `Accedim al servidor en amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.`
 
 ![Imatge](/imatges/imatge1.png)
 
-####Accedim a la pantalla de creació de usuaris.
+## `Accedim a la pantalla de creació de usuaris.`
 
 ![Imatge](/imatges/imatge2.png)
 
@@ -234,7 +234,7 @@ docker start svn-server
 
 ![Imatge](/imatges/imatge3.png)
 
-####Crearem un usuari , este cas e creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.
+## `Crearem un usuari , este cas e creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.`
 
 ![Imatge](/imatges/imatge4.png)
 
@@ -243,7 +243,7 @@ docker start svn-server
 
 
 
-####Donem permisos i es crearan els directoris 
+## Donem permisos i es crearan els directoris 
 >***`svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
 >A    alumne123./tags
 >A    alumne123./trunk
@@ -277,9 +277,9 @@ Revisión obtenida: 1
 ![Imatge](/imatges/imatge5.png)
 ***`La contraseña de subversion edge la demana gráficament, és la que esta asignada per defecte per a l'administració del servidor de apache de subversion edge.`***
 
-####***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, y amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" y "/srv/svn-data" son relatives als contenidors que instalem, i poden cambiar o no els directoris segons la seua configuracio per defecte y el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
+### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, y amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" y "/srv/svn-data" son relatives als contenidors que instalem, i poden cambiar o no els directoris segons la seua configuracio per defecte y el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
-## Com treballar en GIT.
+# ***`Com treballar en GIT.`***
 
 ***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de git.`***
 
@@ -316,6 +316,7 @@ Eixemple: git commit -a -m "nous canvis"
  git log
 
 ![Imatge](/imatges/imatge11.png)
+
 
 
 
