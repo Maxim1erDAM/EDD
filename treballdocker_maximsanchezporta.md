@@ -1,5 +1,5 @@
 # **1ER. Desarrotllament D'Aplicacions Multiplataforma. Entorns de desenvolupament**
-# **TEMA 1.-DOCKER, CONTENIDORS Y SERVIDOR COLLABNET SUBVERSION EDGE-**
+# **-DOCKER, CONTENIDORS,SERVIDOR COLLABNET SUBVERSION EDGE I GIT-**
 #    **-Activitat pràctica-**
 
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
@@ -13,7 +13,7 @@
     
      
       
-# Ejercici sobre Docker y servidor de CollabNet Subversion Edge.
+# UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
 
 ## ***`1.¿Que és Docker? Docker es una aplicació de códi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aísla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux y Mac, per tant es multiplataforma.`***
@@ -105,7 +105,6 @@ su root
 
 >***`Descarrega la imatge busybox (mini imatge de system o de root per a poder executar aplicacions independentment de root y system de ubuntu)`***  
 docker pull busybox
-
 
 >***`Descarrega la imatge subversion edge`***  
 apt install subversion
