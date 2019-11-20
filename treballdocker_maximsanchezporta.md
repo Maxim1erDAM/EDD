@@ -107,9 +107,6 @@ Contraseña: ***`<Así afegim la contraseña de root`***
 
 sudo passwd root
 
->***`Iniciem sessió com a root`*** 
-
-su root
 
 >***`Ara inicia sessió en root per a no tindre problemes en docker, pero podriem utilitzar altre usuari amb privilegis com a root`***  
 
