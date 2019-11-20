@@ -1,5 +1,5 @@
 # **1ER DAM. Desarrotllament D'Aplicacions Multiplataforma. EDD. Entorns de Desenvolupament.**
-# **DOCKER, CONTENIDORS, SERVIDOR COLLABNET SUBVERSION EDGE I GIT**
+# **Docker, Contenidors, Servidor CollabNet Subversion Edge i Git**
 #    **-Activitat pràctica-**
 
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
