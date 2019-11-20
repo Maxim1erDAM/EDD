@@ -5,7 +5,7 @@
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
 ![Programació(Wikipedia)](/imatges/imatge0.png) 
-##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuides. 
+#### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuides. 
 
  
   
@@ -25,7 +25,7 @@
 #### -Configurar VirtualBox.
 
 >***`*En VirtualBox, ((ctrl+alt DERECHO)+c) configura la finestra o maquina virtual.  `***  
-#####`En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
+####`En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
 > ***`((ctrl+alt DERECHO)+c)`***+***`Dispositivos>Portapapeles Compartido> Bidireccional`***+***` Dispositivos>Arrastrar y Soltar> Bidireccional`***
 
 #### -Com activar el portafolis i "Arrastrar y soltar".
@@ -126,7 +126,7 @@ $sudo apt install docker-ce
 $sudo apt-cache policy docker-ce
 
 ##Comandos y configuración de docker
-#####
+####
 >***`>Iniciem sessió como root`***
  >alumne@alumne-VirtualBox:~$ su root
 Contraseña: ***`<Así afegim la contraseña de root`***
@@ -222,11 +222,11 @@ docker stop svn-server
 >***`Activar el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor) `***
 docker start svn-server
 
-#####Accedim al servidor en amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.
+####Accedim al servidor en amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.
 
 ![Imatge](/imatges/imatge1.png)
 
-#####Accedim a la pantalla de creació de usuaris.
+####Accedim a la pantalla de creació de usuaris.
 
 ![Imatge](/imatges/imatge2.png)
 
@@ -234,7 +234,7 @@ docker start svn-server
 
 ![Imatge](/imatges/imatge3.png)
 
-#####Crearem un usuari , este cas e creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.
+####Crearem un usuari , este cas e creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.
 
 ![Imatge](/imatges/imatge4.png)
 
@@ -243,7 +243,7 @@ docker start svn-server
 
 
 
-#####Donem permisos i es crearan els directoris 
+####Donem permisos i es crearan els directoris 
 >***`svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
 >A    alumne123./tags
 >A    alumne123./trunk
@@ -314,7 +314,9 @@ Eixemple: git commit -a -m "nous canvis"
 
 ***`Y tornem a mostrar la informació dels commits amb:`*** 
  git log
- 
+
 ![Imatge](/imatges/imatge11.png)
+
+
 
 
