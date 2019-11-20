@@ -32,7 +32,7 @@
 
 ![Imatge](/imatges/imatge6.png)
 
-`Asignem "Bidireccional" en els dos casos.`
+`Asignem "Bidireccional" en els dos casos. `
 
 
 ## -Instalar "Guest Additions".
