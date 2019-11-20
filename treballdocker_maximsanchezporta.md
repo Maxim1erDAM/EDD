@@ -13,7 +13,7 @@
 
 # Index:
 
-***2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.(https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
+***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
