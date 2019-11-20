@@ -44,10 +44,10 @@
 
 
 >***`*Opcional. Instalar editor de text Vim`***
->$sudo apt-get install vim
+>sudo apt install vim
 
 >***`*Opcional. Instalar terminal Tilix`***
->$sudo apt-get install tilix
+>sudo apt install tilix
 
 
 
@@ -75,15 +75,15 @@ sudo apt install docker-ce
 
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
 
->`USUARIO@USUARIO-VirtualBox:
-$sudo passwd root`
+`USUARIO@USUARIO-VirtualBox:
+sudo passwd root`
 
-`>root >root` ***`<Así afegim la contraseña de rooti la confirmem`***
+`>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
 
 >***`En el meu cas`***
 
 alumne@alumne-VirtualBox:
-$sudo passwd root
+sudo passwd root
 
 `>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
 
