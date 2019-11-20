@@ -62,7 +62,7 @@ sudo apt install tilix
    
       
 ## Instalar docker:
->***`Instalar dependencies de els paquets de docker`***
+>***`Instalar dependencies dels paquets de docker`***
 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
@@ -285,10 +285,11 @@ $docker start svn-server
 
 >***`svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
 
->A    alumne123./tags
->A    alumne123./trunk
->A    alumne123./branches
->Revisión obtenida: 1
+`A    alumne123./tags`
+
+`A    alumne123./trunk`
+`A    alumne123./branches`
+`Revisión obtenida: 1`
 
 
 >***`Donar permisos i accesibilitat al usuari, a l'enllaç de host de la red local i crear els seus directoris de tags,trunk i branches.* Desde usuari administrador de Ubuntu amb un altre nom com a usuari "alumne". `***
