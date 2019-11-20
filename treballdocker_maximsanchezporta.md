@@ -16,10 +16,10 @@
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
 
-## ***`1.¿Que és Docker? Docker es una aplicació de códi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aísla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux y Mac, per tant es multiplataforma.`***
+## ***`1.¿Que és Docker? Docker es una aplicació de códi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aísla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
 
-## ***`2.¿Que és Subversion Edge? CollabNet Subversion Edge es la distribució principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion y ViewVC, així como una potent interfície d'usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d'usuari centralitzat e intuitiu.`***
+## ***`2.¿Que és Subversion Edge? CollabNet Subversion Edge es la distribució principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion i ViewVC, així como una potent interfície d'usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d'usuari centralitzat e intuitiu.`***
 
 
 ## -Configurar VirtualBox.
