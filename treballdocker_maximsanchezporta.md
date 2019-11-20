@@ -62,7 +62,7 @@
 ## Instalar docker:
 >***`Instalar dependencies de els paquets de docker`***
 
-$sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
 
 >***`Instalar docker des dels repositoris de docker, en Ubuntu 18`*** 
