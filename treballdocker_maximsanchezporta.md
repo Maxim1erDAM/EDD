@@ -114,7 +114,7 @@ sudo passwd root
 
 su root
 
->***`Descarrega la imatge busybox (mini imatge de system o de root per a poder executar aplicacions independentment de root i system de ubuntu)`***  
+>***`Descarrega la imatge busybox (mini imatge de system o de root, amb el contingut de "system" per a l'arrel, per a poder executar aplicacions independentment de root i el directoris del sistema de l'arrel d'Ubuntu "/" de ubuntu)`***  
 
 docker pull busybox
 
