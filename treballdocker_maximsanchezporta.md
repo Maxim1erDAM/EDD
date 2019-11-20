@@ -16,7 +16,7 @@
 #### ***`2.¿Que és Subversion Edge? CollabNet Subversion Edge es la distribució principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion i ViewVC, així como una potent interfície d'usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d'usuari centralitzat e intuitiu.`***
 
 
-## -Configurar VirtualBox.
+## 1.-Configurar VirtualBox.
 
 >***`*En VirtualBox, ((ctrl+alt DRET)+c) configura la finestra o maquina virtual.  `***  
 ### `-En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
@@ -55,7 +55,7 @@ sudo apt install tilix
 
 
 
-## -Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.
+## 2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.
 
 
 
@@ -72,7 +72,7 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 sudo apt install docker-ce
 
 
-## Assignar contraseña a root:
+## 3.Assignar contraseña a root:
 
 
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
@@ -103,7 +103,7 @@ Contraseña: ***`<Así afegim la contraseña de root`***
 
 
 
-## Configurar docker:
+## 4.Configurar docker:
 
 >***`Asignem contraseña a root`*** 
 
@@ -323,7 +323,7 @@ Revisión obtenida: 1
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives al contenidor que estem instalant, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
-# ***`Com treballar amb GIT de Ubuntu de manera local.`***
+# ***`5. - Com treballar amb GIT de Ubuntu de manera local.`***
 
 ***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de GIT.`***
 
