@@ -233,12 +233,12 @@ docker start svn-server
 
 ![Imatge](/imatges/imatge3.png)
 
-## `Crearem un usuari , este cas e creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.`
+## `Crearem un usuari , este cas he creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.`
 
 ![Imatge](/imatges/imatge4.png)
 
 
->***`Donar permisos y accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk y branches.*Desde usuari root amb password asignada amb passwd.   `***
+>***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk y branches.*Desde usuari root amb password asignada amb passwd.   `***
 
 
 
@@ -250,7 +250,7 @@ docker start svn-server
 >Revisión obtenida: 1
 
 
->***`Donar permisos y accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk y branches.* Desde usuario administrador de Ubuntu con otro nombre como usuario "alumne". `***
+>***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk y branches.* Desde usuario administrador de Ubuntu con otro nombre como usuario "alumne". `***
 
 >***`alumne@alumne-VirtualBox:~$ sudo svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
 >Reino de autentificación: <http://127.0.0.1:18080> CollabNet Subversion Repository
@@ -311,7 +311,7 @@ Eixemple:
 ***`Creem un altre commit afegit de prova :`*** 
 Eixemple: git commit -a -m "nous canvis"
 
-***`Y tornem a mostrar la informació dels commits amb:`*** 
+***`I tornem a mostrar la informació dels commits amb:`*** 
  git log
 
 ![Imatge](/imatges/imatge11.png)
