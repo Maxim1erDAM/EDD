@@ -120,7 +120,7 @@ docker pull busybox
 
 >***`Descarrega la imatge subversion edge`***  
 
-apt install subversion
+$apt install subversion
 
 >***`Afegir clau gpg de docker per a afegirla en ubuntu`***
 
@@ -152,75 +152,75 @@ root@alumne-VirtualBox:/home/alumne#
 
 >***`Mostrar hello world de docker `***
 
- docker run hello-world
+ $docker run hello-world
 
 >***`Activar el servei de docker`***
 
- systemctl enable docker
+ $systemctl enable docker
 
 >***`Desactivar el servei de docker`***
 
- systemctl disable docker
+ $systemctl disable docker
 
 >***`Descarregar el busybox per a Docker (estructura de system o root per a contenidors o imatges de docker)`***
 
- docker pull busybox
+ $docker pull busybox
 
 >***`Vore imatges que estan instalades en docker`***
 
- docker images
+ $docker images
 
 >***`Mostra hola per pantalla amb la imatge de busybox per a docker`***
 
- docker run busybox echo "hola"
+ $docker run busybox echo "hola"
 
 >***`Mostra el ls per pantalla amb la imatge de busybox per a docker`***
 
-docker run busybox ls
+$docker run busybox ls
 
 >***`Mostra el archiu de text del usuari /etc/passwd de la imatge busybox`***
 
-docker run busybox cat /etc/passwd
+$docker run busybox cat /etc/passwd
 
 >***`Mostra els contenidors de la imatge`***
 
-docker run busybox ps aux
+$docker run busybox ps aux
 
 >***`Activar mode shell dins de la imatge de docker busybox (utilitzar comandes dins de la imatge busybox)`***
 
-docker run -it busybox sh
+$docker run -it busybox sh
 
 >***`Vore els procesos que s'han creat en la sessió actual del usuari i docker*`***
 
-docker ps -a
+$docker ps -a
 
 >***`Per a eliminar un contenidor, afegir el codi del contenidor eixemple:5dde99182cec`***
 
- docker rm 5dde99182cec
+$docker rm 5dde99182cec
 
 >***`Ids dels contenidors que ja han acabat la tasca perque tenen status com a exited`***
 
-docker ps -a -q -f status=exited
+$docker ps -a -q -f status=exited
 
 >***`Combinar comanda de contenidors que han acabat la tasca amb "comanda de matar els procesos amb status exited".`***
 
- docker rm$(docker ps -a -q -fstatus=exited)
+$docker rm$(docker ps -a -q -fstatus=exited)
 
 >***`Executar imatge o contenidor de subversion-edge amb docker .`***
 
-docker run -d mamohr/subversion-edge
+$docker run -d mamohr/subversion-edge
 
 >***`Veiem si el contenidor de subversion-edge es troba en execució`.***
 
-docker ps
+$docker ps
 
 >***`Per a eliminar el contingut de subversion-edge.`***
 
-docker rm "codi del contenidor"
+$docker rm "codi del contenidor"
 
 >***`Tornar a executar subversion-edge correctament (si no te les images les descarrega).`***
 
-docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr/subversion-edge
+$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr/subversion-edge
 
 >***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, és on el CSVN guarda tota la informació que genera, la sincronitzarem amb el volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigixen de el contenidor a la maquina local.`***
 
@@ -244,7 +244,7 @@ Status: Downloaded newer image for mamohr/subversion-edge:latest
 
 >***`**Instalar el contenidor i les dependencies  del servidor de Subversion Edge de manera manual, si la comanda anterior no el descarrega`***
 
-apt install subversion
+$apt install subversion
 
 >***`*Accedir a la pagina http de subversion edge amb usuari:admin contraseña:admin , crear un usuari en el meu cas "alumne123." i el repositori "Projecte1"`***
 
@@ -256,11 +256,11 @@ apt install subversion
 
 >***`Detindre el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor)`***
 
-docker stop svn-server
+$docker stop svn-server
 
 >***`Activar el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor) `***
 
-docker start svn-server
+$docker start svn-server
 
 ## `Accedim al servidor amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.`
 
@@ -328,40 +328,40 @@ Revisión obtenida: 1
 
 ***`Podem asignar l'editor per defecte amb la línea`*** 
 
-git config --global core.editor "nomdeeditor"
+sudo git config --global core.editor "nomdeeditor"
 
 ***`Podem mostrar les variables de configuració amb:`*** 
 
-git config --list
+sudo git config --list
 
 ![Imatge](/imatges/imatge8.png)
 
 ***`Com crear un commit, al modificar o crear o eliminar archius:`*** 
 
-Eixemple: git commit -a -m "Primer Commit"
+Eixemple: sudo git commit -a -m "Primer Commit"
 
 ![Imatge](/imatges/imatge9.png)
 
 ***`Mostrar commits creats:`*** 
 
-Eixemple: git log
+Eixemple: sudo git log
 
 
 ***`Creem un parell de fixers de text:`*** 
 
 Eixemple:
- `touch fitxer 1.md`
- `touch fitxer 2.md`
+ `sudo touch fitxer 1.md`
+ `sudo touch fitxer 2.md`
 
 
  
 ***`Creem un altre commit de prova :`*** 
 
-Eixemple: git commit -a -m "nous canvis"
+Eixemple: sudo sudo git commit -a -m "nous canvis"
 
 ***`I tornem a mostrar l'informació dels commits amb:`*** 
 
- git log
+ sudo git log
 
 ![Imatge](/imatges/imatge11.png)
 
