@@ -1,4 +1,4 @@
-# **1ER. Desarrotllament D'Aplicacions Multiplataforma. Entorns de desenvolupament**
+# **1ER. Desarrotllament D'Aplicacions Multiplataforma. EDD.Entorns de Desenvolupament**
 # **-DOCKER, CONTENIDORS,SERVIDOR COLLABNET SUBVERSION EDGE I GIT-**
 #    **-Activitat pràctica-**
 
