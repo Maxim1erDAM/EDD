@@ -57,17 +57,20 @@ $sudo apt-get install tilix
 
 
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
-`USUARIO@USUARIO-VirtualBox:$sudo passwd root`
+`USUARIO@USUARIO-VirtualBox:
+$sudo passwd root`
 `>root >root` ***`<Así afegim la contraseña de rooti la confirmem`***
 
 >***`En el meu cas`***
-alumne@alumne-VirtualBox:~$sudo passwd root
+alumne@alumne-VirtualBox:
+$sudo passwd root
 `>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
 
 
 
 >***`Iniciar sessió amb root`***
- >alumne@alumne-VirtualBox:~$ su root
+ >alumne@alumne-VirtualBox:$
+su root
 Contraseña: ***`<Así afegim la contraseña de root`***
 root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`***
 
@@ -81,105 +84,137 @@ $sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubu
       
 ## Instalar docker:
 >***`Instalar dependencies de els paquets de docker`***
+
 $sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
 
 >***`Instalar docker des dels repositoris de docker, en Ubuntu 18`*** 
+
 sudo apt install docker-ce
+
 ## Configurar docker:
 
 >***`Asignem contraseña a root`*** 
+
 sudo passwd root
 
 >***`Iniciem sessió com a root`*** 
+
 su root
 
 >***`Ara inicia sessió en root per a no tindre problemes en docker, pero podriem utilitzar altre usuari amb privilegis com a root`***  
+
 su root
 
 >***`Descarrega la imatge busybox (mini imatge de system o de root per a poder executar aplicacions independentment de root i system de ubuntu)`***  
+
 docker pull busybox
 
 >***`Descarrega la imatge subversion edge`***  
+
 apt install subversion
 
 >***`Afegir clau gpg de docker per a afegirla en ubuntu`***
+
 $curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 >***`Comprobar si s'ha descarregat la firma o empremta digital`***
+
 $sudo apt-key fingerprint 0EBFCD88
 
 >***`Tornar a actualizar paquets`***
+
 $sudo apt update
 
 >***`Instalar paquets del repositori de docker`***
+
 $sudo apt install docker-ce
 
 >***`Actualitzar cache de la politica o privacitat de docker`***
+
 $sudo apt-cache policy docker-ce
 
 ## `Comandos i configuració de docker`
  
->***`>Iniciem sessió como root`***
+>***`>Iniciem sessió amb usuari root`***
  >alumne@alumne-VirtualBox:~$ su root
 Contraseña: ***`<Así afegim la contraseña de root`***
 root@alumne-VirtualBox:/home/alumne# 
 
 >***`Mostrar hello world de docker `***
+
  docker run hello-world
 
 >***`Activar el servei de docker`***
+
  systemctl enable docker
 
 >***`Desactivar el servei de docker`***
+
  systemctl disable docker
 
 >***`Descarregar el busybox per a Docker (estructura de system o root per a contenidors o imatges de docker)`***
+
  docker pull busybox
 
 >***`Vore imatges que estan instalades en docker`***
+
  docker images
 
 >***`Mostra hola per pantalla amb la imatge de busybox per a docker`***
+
  docker run busybox echo "hola"
 
 >***`Mostra el ls per pantalla amb la imatge de busybox per a docker`***
+
 docker run busybox ls
 
 >***`Mostra el archiu de text del usuari /etc/passwd de la imatge busybox`***
+
 docker run busybox cat /etc/passwd
 
 >***`Mostra els contenidors de la imatge`***
+
 docker run busybox ps aux
 
 >***`Activar mode shell dins de la imatge de docker busybox (utilitzar comandes dins de la imatge busybox)`***
+
 docker run -it busybox sh
 
->***`Vore els procesos que shan creat en la sessió actual del usuari i docker*`***
+>***`Vore els procesos que s'han creat en la sessió actual del usuari i docker*`***
+
 docker ps -a
 
 >***`Per a eliminar un contenidor, afegir el codi del contenidor eixemple:5dde99182cec`***
+
  docker rm 5dde99182cec
 
 >***`Ids dels contenidors que ja han acabat la tasca perque tenen status com a exited`***
+
 docker ps -a -q -f status=exited
 
 >***`Combinar comanda de contenidors que han acabat la tasca amb "comanda de matar els procesos amb status exited".`***
+
  docker rm$(docker ps -a -q -fstatus=exited)
 
 >***`Executar imatge o contenidor de subversion-edge amb docker .`***
+
 docker run -d mamohr/subversion-edge
 
 >***`Veiem si el contenidor de subversion-edge es troba en execució`.***
- docker ps
+
+docker ps
 
 >***`Per a eliminar el contingut de subversion-edge.`***
+
 docker rm "codi del contenidor"
 
 >***`Tornar a executar subversion-edge correctament (si no te les images les descarrega).`***
+
 docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr/subversion-edge
 
 >***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, és on el CSVN guarda tota la informació que genera, la sincronitzarem amb el volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigixen de el contenidor a la maquina local.`***
+
 >$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080 -v /srv/svn-data:/opt/csvn/data --name svn-server mamohr/subversion-edge
 
 
@@ -199,6 +234,7 @@ Status: Downloaded newer image for mamohr/subversion-edge:latest
 
 
 >***`**Instalar el contenidor i les dependencies  del servidor de Subversion Edge de manera manual, si la comanda anterior no el descarrega`***
+
 apt install subversion
 
 >***`*Accedir a la pagina http de subversion edge amb usuari:admin contraseña:admin , crear un usuari en el meu cas "alumne123." i el repositori "Projecte1"`***
@@ -210,9 +246,11 @@ apt install subversion
 >***`Crear usuari "alumne123." i el repositori "Projecte1" desde el servidor subversionedge`***
 
 >***`Detindre el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor)`***
+
 docker stop svn-server
 
 >***`Activar el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor) `***
+
 docker start svn-server
 
 ## `Accedim al servidor amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.`
@@ -235,7 +273,9 @@ docker start svn-server
 
 
 ## Donem permisos i es crearan els directoris 
+
 >***`svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
+
 >A    alumne123./tags
 >A    alumne123./trunk
 >A    alumne123./branches
@@ -266,6 +306,7 @@ A alumne123./branches
 Revisión obtenida: 1
 
 ![Imatge](/imatges/imatge5.png)
+
 ***`La contraseña de subversion edge la demana gráficament, és la que es troba asignada per defecte per a l'administració del servidor de apache de subversion edge.`***
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives als contenidors que instalem, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
@@ -277,23 +318,28 @@ Revisión obtenida: 1
 ![Imatge](/imatges/imatge7.png)
 
 ***`Podem asignar l'editor per defecte amb la línea`*** 
+
 git config --global core.editor "nomdeeditor"
 
 ***`Podem mostrar les variables de configuració amb:`*** 
+
 git config --list
 
 ![Imatge](/imatges/imatge8.png)
 
 ***`Com crear un commit, al modificar o crear o eliminar archius:`*** 
+
 Eixemple: git commit -a -m "Primer Commit"
 
 ![Imatge](/imatges/imatge9.png)
 
 ***`Mostrar commits creats:`*** 
+
 Eixemple: git log
 
 
 ***`Creem un parell de fixers de text:`*** 
+
 Eixemple:
  `touch fitxer 1.md`
  `touch fitxer 2.md`
@@ -301,9 +347,11 @@ Eixemple:
 
  
 ***`Creem un altre commit de prova :`*** 
+
 Eixemple: git commit -a -m "nous canvis"
 
 ***`I tornem a mostrar l'informació dels commits amb:`*** 
+
  git log
 
 ![Imatge](/imatges/imatge11.png)
