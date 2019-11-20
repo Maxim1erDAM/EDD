@@ -16,7 +16,7 @@
 
 ***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
 ***[3.-Assignar contraseña a root:](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3assignar-contrase%C3%B1a-a-root)***
-***[3.-Assignar contraseña a root:](
+***[4.-Configurar docker:](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
@@ -111,7 +111,7 @@ Contraseña: ***`<Así afegim la contraseña de root`***
 
 
 
-## 4.Configurar docker:
+## 4.-Configurar docker:
 
 >***`Asignem contraseña a root`*** 
 
@@ -327,7 +327,7 @@ Revisión obtenida: 1
 
 ![Imatge](/imatges/imatge5.png)
 
-***`La contraseña de subversion edge la demana gráficament, és la que es troba asignada per defecte per a l'administració del servidor de apache de subversion edge.`***
+***`La contraseña de subversion edge la demana gráficament, és la que es troba asignada per defecte per a l'administració del servidor en apache de subversion edge.`***
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives al contenidor que estem instalant, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
@@ -358,7 +358,7 @@ Eixemple: sudo git commit -a -m "Primer Commit"
 Eixemple: sudo git log
 
 
-***`Creem un parell de fixers de text:`*** 
+***`Creem un parell de fitxers de text:`*** 
 
 Eixemple:
  `sudo touch fitxer 1.md`
