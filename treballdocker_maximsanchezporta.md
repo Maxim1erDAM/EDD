@@ -14,7 +14,7 @@
 
 ***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
 
-***[3.-Assignar contraseña a root.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3assignar-contrase%C3%B1a-a-root)***
+***[3.-Assignar contrasenya a root.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3assignar-contrase%C3%B1a-a-root)***
 
 ***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 
@@ -86,22 +86,22 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 sudo apt install docker-ce
 
 
-## 3.-Assignar contraseña a root:
+## 3.-Assignar contrasenya a root:
 
 
->***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
+>***`Asignar contrasenya a root e iniciar contrasenya, en el meu cas "alumne" es el usuari de la maquina virtual`***
 
 `USUARIO@USUARIO-VirtualBox:
 sudo passwd root`
 
-`>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
+`>root >root` ***`<Así afegim la contrasenya de root i la confirmem`***
 
 >***`En el meu cas`***
 
 alumne@alumne-VirtualBox:
 sudo passwd root
 
-`>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
+`>root >root` ***`<Así afegim la contrasenya de root i la confirmem`***
 
 
 
@@ -111,7 +111,7 @@ alumne@alumne-VirtualBox:$
  
 su root
 
-Contraseña: ***`<Así afegim la contraseña de root`***
+Contrasenya: ***`<Así afegim la contrasenya de root`***
 
 >root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`***
 
@@ -119,7 +119,7 @@ Contraseña: ***`<Así afegim la contraseña de root`***
 
 ## 4.-Configurar docker:
 
->***`Asignem contraseña a root`*** 
+>***`Asignem contrasenya a root`*** 
 
 sudo passwd root
 
