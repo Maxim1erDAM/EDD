@@ -15,6 +15,8 @@
 ***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
 
 ***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
+***[3.-Assignar contraseña a root:](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3assignar-contrase%C3%B1a-a-root)***
+***[3.-Assignar contraseña a root:](
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
@@ -78,7 +80,7 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 sudo apt install docker-ce
 
 
-## 3.Assignar contraseña a root:
+## 3.-Assignar contraseña a root:
 
 
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
@@ -148,7 +150,7 @@ $sudo apt install docker-ce
 
 $sudo apt-cache policy docker-ce
 
-## `Comandos i configuració de docker`
+#### `Comandes i configuració de docker`
  
 >***`>Iniciem sessió amb usuari root`***
  >alumne@alumne-VirtualBox:~$ 
