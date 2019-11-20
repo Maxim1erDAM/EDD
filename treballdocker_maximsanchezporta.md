@@ -6,10 +6,6 @@
 
 ![Programació(Wikipedia)](imatges/imatge0.png) 
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
-      
-# UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
-
-
 
 # Index:
 ***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
@@ -22,6 +18,7 @@
 
 ***[5. -Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 
+# UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
