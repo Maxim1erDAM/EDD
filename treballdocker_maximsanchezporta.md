@@ -31,7 +31,7 @@
 
 ## -Instalar "Guest Additions".
 
-``Fem clic en "Insertar imagen de CD de las <<Guest Additions>>". Es montará la unitat de cdrom amb la ISO corresponent.``
+``Fem clic en "Insertar imagen de CD de las <<Guest Additions>>". Es montará la unitat de CDROM amb la ISO corresponent.``
 
 >***`alumne@alumne-VirtualBox:/media/alumne$ `*** cd /
 >***`alumne@alumne-VirtualBox:/media/alumne$ `***  cd /media/alumne/VBox_GAs_6.0.12/
@@ -53,7 +53,7 @@ $sudo apt-get install tilix
 
 
 
-## -Com instalar docker en Ubuntu 18 o altres distribucions de linux.
+## -Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.
 
 
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
@@ -73,7 +73,7 @@ root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`**
 
 
 
->***`Afegir repositori deb de docker (disponible en so basat en ubuntu 18 bionic)`***
+>***`Afegir repositori deb de docker (disponible en SO basat en Ubuntu 18 Bionic, yo treballe amb "Lubuntu 18")`***
 $sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
 
@@ -164,22 +164,22 @@ docker ps -a
 >***`Ids dels contenidors que ja han acabat la tasca perque tenen status com a exited`***
 docker ps -a -q -f status=exited
 
->***`Combinar comando de contenidors que han acabat la taska amb "comando de matar els procesos amb status exited"`***
+>***`Combinar comanda de contenidors que han acabat la tasca amb "comanda de matar els procesos amb status exited".`***
  docker rm$(docker ps -a -q -fstatus=exited)
 
->***`Executar imatge o contenidor de subversion-edge amb docker `***
+>***`Executar imatge o contenidor de subversion-edge amb docker .`***
 docker run -d mamohr/subversion-edge
 
->***`Veiem si el contenidor de subversion-edge es troba en execució`***
+>***`Veiem si el contenidor de subversion-edge es troba en execució`.***
  docker ps
 
->***`Per a eliminar el contingut de subversion-edge`***
+>***`Per a eliminar el contingut de subversion-edge.`***
 docker rm "codi del contenidor"
 
->***`Tornar a executar subversion-edge correctament (si no te les images les descarrega)`***
+>***`Tornar a executar subversion-edge correctament (si no te les images les descarrega).`***
 docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr/subversion-edge
 
->***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, que és on el CSVN guarda tota la informació que genera, la sincronitzarem al volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigixen en de el contenidor a la maquina local`***
+>***`Tinguent en compte que la carpeta "/opt/csvn/data" del contenidor, és on el CSVN guarda tota la informació que genera, la sincronitzarem amb el volum(directori) "/srv/svn-data" . Amb açò ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigixen de el contenidor a la maquina local.`***
 >$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080 -v /srv/svn-data:/opt/csvn/data --name svn-server mamohr/subversion-edge
 
 
@@ -198,14 +198,14 @@ Status: Downloaded newer image for mamohr/subversion-edge:latest
 77c16450dbb29a614a205e95f9c3ca2072f156dc46a67e5a6b2e1b296e660d03
 
 
->***`**Instalar el contenidor i les dependencies  del servidor de Subversion Edge de manera manual, si la comanda anterior no lo descarrega`***
+>***`**Instalar el contenidor i les dependencies  del servidor de Subversion Edge de manera manual, si la comanda anterior no el descarrega`***
 apt install subversion
 
->***`*Accedir a la pagina http de subversion edge amb usuari:admin contraseña:admin, crear un usuari en el meu cas "alumne123." i el repositori "Projecte1"`***
+>***`*Accedir a la pagina http de subversion edge amb usuari:admin contraseña:admin , crear un usuari en el meu cas "alumne123." i el repositori "Projecte1"`***
 
 >http://127.0.0.1:3343/csvn/
 
->***`Pulsar start per a encendre el servidor subversion desde el navegador.`***
+>***`Pulsar start per a engegar el servidor subversion desde el navegador.`***
 
 >***`Crear usuari "alumne123." i el repositori "Projecte1" desde el servidor subversionedge`***
 
@@ -215,7 +215,7 @@ docker stop svn-server
 >***`Activar el servei de subversion (es troba renombrat així en la ordre de ejecució del contenidor) `***
 docker start svn-server
 
-## `Accedim al servidor en amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.`
+## `Accedim al servidor amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.`
 
 ![Imatge](/imatges/imatge1.png)
 
@@ -223,11 +223,9 @@ docker start svn-server
 
 ![Imatge](/imatges/imatge2.png)
 
-
-
 ![Imatge](/imatges/imatge3.png)
 
-## `Crearem un usuari , este cas he creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.`
+## `Crearem un usuari , hem creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.`
 
 ![Imatge](/imatges/imatge4.png)
 
@@ -244,7 +242,7 @@ docker start svn-server
 >Revisión obtenida: 1
 
 
->***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk i branches.* Desde usuario administrador de Ubuntu con otro nombre como usuario "alumne". `***
+>***`Donar permisos i accesibilitat al usuari, a l'enllaç de host de la red local i crear els seus directoris de tags,trunk i branches.* Desde usuari administrador de Ubuntu amb un altre nom com a usuari "alumne". `***
 
 >***`alumne@alumne-VirtualBox:~$ sudo svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
 >Reino de autentificación: <http://127.0.0.1:18080> CollabNet Subversion Repository
@@ -268,13 +266,13 @@ A alumne123./branches
 Revisión obtenida: 1
 
 ![Imatge](/imatges/imatge5.png)
-***`La contraseña de subversion edge la demana gráficament, és la que esta asignada per defecte per a l'administració del servidor de apache de subversion edge.`***
+***`La contraseña de subversion edge la demana gráficament, és la que es troba asignada per defecte per a l'administració del servidor de apache de subversion edge.`***
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives als contenidors que instalem, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
-# ***`Com treballar en GIT.`***
+# ***`Com treballar amb GIT de Ubuntu de manera local.`***
 
-***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de git.`***
+***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de GIT.`***
 
 ![Imatge](/imatges/imatge7.png)
 
@@ -302,10 +300,10 @@ Eixemple:
 
 
  
-***`Creem un altre commit afegit de prova :`*** 
+***`Creem un altre commit de prova :`*** 
 Eixemple: git commit -a -m "nous canvis"
 
-***`I tornem a mostrar la informació dels commits amb:`*** 
+***`I tornem a mostrar l'informació dels commits amb:`*** 
  git log
 
 ![Imatge](/imatges/imatge11.png)
