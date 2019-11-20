@@ -45,11 +45,11 @@
 
 >***`*Opcional. Instalar editor de text Vim`***
 
->sudo apt install vim
+sudo apt install vim
 
 >***`*Opcional. Instalar terminal Tilix`***
 
->sudo apt install tilix
+sudo apt install tilix
 
 
 
