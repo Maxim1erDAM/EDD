@@ -288,7 +288,9 @@ $docker start svn-server
 `A    alumne123./tags`
 
 `A    alumne123./trunk`
+
 `A    alumne123./branches`
+
 `Revisión obtenida: 1`
 
 
