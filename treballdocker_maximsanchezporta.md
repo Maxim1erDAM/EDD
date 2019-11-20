@@ -56,6 +56,23 @@
 ## -Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.
 
 
+
+   
+      
+## Instalar docker:
+>***`Instalar dependencies de els paquets de docker`***
+
+$sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+
+>***`Instalar docker des dels repositoris de docker, en Ubuntu 18`*** 
+
+sudo apt install docker-ce
+
+
+## Assignar contraseña a root:
+
+
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
 
 >`USUARIO@USUARIO-VirtualBox:
@@ -83,22 +100,6 @@ Contraseña: ***`<Así afegim la contraseña de root`***
 >root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`***
 
 
-
->***`Afegir repositori deb de docker (disponible en SO basat en Ubuntu 18 Bionic, yo treballe amb "Lubuntu 18")`***
-$sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-
-
-   
-      
-## Instalar docker:
->***`Instalar dependencies de els paquets de docker`***
-
-$sudo apt install apt-transport-https ca-certificates curl software-properties-common
-
-
->***`Instalar docker des dels repositoris de docker, en Ubuntu 18`*** 
-
-sudo apt install docker-ce
 
 ## Configurar docker:
 
