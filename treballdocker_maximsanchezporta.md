@@ -5,7 +5,7 @@
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
 ![Programació(Wikipedia)](imatges/imatge0.png) 
-##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuides. 
+##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
       
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
