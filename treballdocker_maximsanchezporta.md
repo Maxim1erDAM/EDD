@@ -4,7 +4,7 @@
 
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
-![Docker(Servei](imatges/imatge0.png) 
+![Docker(Servei)](imatges/imatge0.png) 
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
 # Index:
@@ -47,11 +47,15 @@
 
 >***`alumne@alumne-VirtualBox:/media/alumne$ `*** cd /
 
->***`alumne@alumne-VirtualBox:/media/alumne$ `***  cd /media/alumne/VBox_GAs_6.0.12/
+>***`alumne@alumne-VirtualBox:/media/alumne$ `***  
+
+cd /media/alumne/VBox_GAs_6.0.12/
 
 >***`Instalar guest additions en una maquina virtual basada en Ubuntu `***    
 
->***`alumne@alumne-VirtualBox:/media/alumne$ `*** sudo sh VBoxGuestAdditions.run 
+>***`alumne@alumne-VirtualBox:/media/alumne$ `***
+
+sudo sh VBoxGuestAdditions.run 
 
 
 ##  -Ferramentes per a la máquina virtual.
@@ -94,14 +98,14 @@ sudo apt install docker-ce
 `USUARIO@USUARIO-VirtualBox:
 sudo passwd root`
 
-`>root >root` ***`<Así afegim la contrasenya de root i la confirmem`***
+`>root >root` ***`<Açí afegim la contrasenya de root i la confirmem`***
 
 >***`En el meu cas`***
 
 alumne@alumne-VirtualBox:
 sudo passwd root
 
-`>root >root` ***`<Así afegim la contrasenya de root i la confirmem`***
+`>root >root` ***`<Açí afegim la contrasenya de root i la confirmem`***
 
 
 
@@ -111,7 +115,7 @@ alumne@alumne-VirtualBox:$
  
 su root
 
-Contrasenya: ***`<Así afegim la contrasenya de root`***
+Contrasenya: ***`<Açí afegim la contrasenya de root`***
 
 >root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`***
 
