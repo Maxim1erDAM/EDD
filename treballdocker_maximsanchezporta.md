@@ -18,9 +18,9 @@
 
 ## -Configurar VirtualBox.
 
->***`*En VirtualBox, ((ctrl+alt DERECHO)+c) configura la finestra o maquina virtual.  `***  
+>***`*En VirtualBox, ((ctrl+alt DRET)+c) configura la finestra o maquina virtual.  `***  
 ### `-En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
-> ***`((ctrl+alt DERECHO)+c)`+`Dispositivos>Portapapeles Compartido> Bidireccional`+` Dispositivos>Arrastrar y Soltar> Bidireccional`***
+> ***`((ctrl+alt DRET)+c)`+`Dispositivos>Portapapeles Compartido> Bidireccional`+` Dispositivos>Arrastrar y Soltar> Bidireccional`***
 
 ## -Com activar el portafolis i "Arrastrar i soltar".
 
