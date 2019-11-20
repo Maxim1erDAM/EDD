@@ -15,8 +15,13 @@
 ***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
 
 ***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
+
 ***[3.-Assignar contraseña a root:](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3assignar-contrase%C3%B1a-a-root)***
+
 ***[4.-Configurar docker:](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
+
+***[5. - Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
+
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
 
@@ -48,7 +53,7 @@
 >***`alumne@alumne-VirtualBox:/media/alumne$ `*** sudo sh VBoxGuestAdditions.run 
 
 
- ##  -Ferramentes per a la máquina virtual.
+##  -Ferramentes per a la máquina virtual.
 
 
 >***`*Opcional. Instalar editor de text Vim`***
@@ -150,7 +155,7 @@ $sudo apt install docker-ce
 
 $sudo apt-cache policy docker-ce
 
-#### `Comandes i configuració de docker`
+## `Comandes i configuració de docker`
  
 >***`>Iniciem sessió amb usuari root`***
  >alumne@alumne-VirtualBox:~$ 
@@ -331,7 +336,7 @@ Revisión obtenida: 1
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives al contenidor que estem instalant, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
-# ***`5. - Com treballar amb GIT de Ubuntu de manera local.`***
+## ***`5. - Com treballar amb GIT de Ubuntu de manera local.`***
 
 ***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de GIT.`***
 
