@@ -196,7 +196,7 @@ root@alumne-VirtualBox:/home/alumne#
 
 $docker run busybox ls
 
->***`Mostra el archiu de text del usuari /etc/passwd de la imatge busybox`***
+>***`Mostra el fitxer de text del usuari /etc/passwd de la imatge busybox`***
 
 $docker run busybox cat /etc/passwd
 
