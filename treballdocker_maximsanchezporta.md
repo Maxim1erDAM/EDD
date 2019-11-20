@@ -6,12 +6,6 @@
 
 ![Programació(Wikipedia)](/imatges/imatge0.png) 
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuides. 
-
- 
-  
-   
-    
-     
       
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
@@ -28,7 +22,7 @@
 ### `-En configuració podem configurar el portafolis bidireccional. Per a activarlo`:
 > ***`((ctrl+alt DERECHO)+c)`+`Dispositivos>Portapapeles Compartido> Bidireccional`+` Dispositivos>Arrastrar y Soltar> Bidireccional`***
 
-## -Com activar el portafolis i "Arrastrar y soltar".
+## -Com activar el portafolis i "Arrastrar i soltar".
 
 ![Imatge](/imatges/imatge6.png)
 
@@ -64,11 +58,11 @@ $sudo apt-get install tilix
 
 >***`Asignar contraseña a root e iniciar contraseña, en el meu cas "alumne" es el usuari de la maquina virtual`***
 `USUARIO@USUARIO-VirtualBox:$sudo passwd root`
-`>root >root` ***`<Así afegim la contraseña de root y la confirmem`***
+`>root >root` ***`<Así afegim la contraseña de rooti la confirmem`***
 
 >***`En el meu cas`***
 alumne@alumne-VirtualBox:~$sudo passwd root
-`>root >root` ***`<Así afegim la contraseña de root y la confirmem`***
+`>root >root` ***`<Así afegim la contraseña de root i la confirmem`***
 
 
 
@@ -103,7 +97,7 @@ su root
 >***`Ara inicia sessió en root per a no tindre problemes en docker, pero podriem utilitzar altre usuari amb privilegis com a root`***  
 su root
 
->***`Descarrega la imatge busybox (mini imatge de system o de root per a poder executar aplicacions independentment de root y system de ubuntu)`***  
+>***`Descarrega la imatge busybox (mini imatge de system o de root per a poder executar aplicacions independentment de root i system de ubuntu)`***  
 docker pull busybox
 
 >***`Descarrega la imatge subversion edge`***  
@@ -124,7 +118,7 @@ $sudo apt install docker-ce
 >***`Actualitzar cache de la politica o privacitat de docker`***
 $sudo apt-cache policy docker-ce
 
-## `Comandos y configuración de docker`
+## `Comandos i configuració de docker`
  
 >***`>Iniciem sessió como root`***
  >alumne@alumne-VirtualBox:~$ su root
@@ -250,7 +244,7 @@ docker start svn-server
 >Revisión obtenida: 1
 
 
->***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk y branches.* Desde usuario administrador de Ubuntu con otro nombre como usuario "alumne". `***
+>***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk i branches.* Desde usuario administrador de Ubuntu con otro nombre como usuario "alumne". `***
 
 >***`alumne@alumne-VirtualBox:~$ sudo svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
 >Reino de autentificación: <http://127.0.0.1:18080> CollabNet Subversion Repository
@@ -276,7 +270,7 @@ Revisión obtenida: 1
 ![Imatge](/imatges/imatge5.png)
 ***`La contraseña de subversion edge la demana gráficament, és la que esta asignada per defecte per a l'administració del servidor de apache de subversion edge.`***
 
-### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, y amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" y "/srv/svn-data" son relatives als contenidors que instalem, i poden cambiar o no els directoris segons la seua configuracio per defecte y el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
+### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives als contenidors que instalem, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
 # ***`Com treballar en GIT.`***
 
