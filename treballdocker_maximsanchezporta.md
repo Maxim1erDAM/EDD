@@ -238,7 +238,7 @@ docker start svn-server
 ![Imatge](/imatges/imatge4.png)
 
 
->***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk y branches.*Desde usuari root amb password asignada amb passwd.   `***
+>***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk i branches.*Desde usuari root amb password asignada amb passwd.   `***
 
 
 
