@@ -45,7 +45,9 @@
 
 ``Fem clic en "Insertar imagen de CD de las <<Guest Additions>>". Es montará la unitat de CDROM amb la ISO corresponent.``
 
->***`alumne@alumne-VirtualBox:/media/alumne$ `*** cd /
+>***`alumne@alumne-VirtualBox:/media/alumne$ `*** 
+
+cd /
 
 >***`alumne@alumne-VirtualBox:/media/alumne$ `***  
 
