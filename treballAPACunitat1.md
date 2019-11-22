@@ -1,10 +1,12 @@
 # **1ER. Desarrotllament D'Aplicacions Multiplataforma.**
 # **TEMA 1.ENTORNS DE DESENVOLUPAMENT**
-### **-Activitat pràcticad’avaluació continuada 1.(APAC1)-**
+### **-Activitat pràctica d’avaluació continuada 1.(APAC1)-**
 
 ###### Modified With                   ***[Dillinger.io](https://dillinger.io/ )***
 
 ![La Gioconda (Wikipedia)](https://ladob.net/wp-content/uploads/2018/03/web-1935737_640.png) 
+
+
 Els informátics utilitzem cualsevol eina que mos ajude a treballar millor a l'hora de programar
 
  
