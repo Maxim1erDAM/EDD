@@ -14,29 +14,9 @@
 
 
 ## UNITAT 2. Práctica de Visual Studio Code.
+>***`1.-Com instalar VSCODE en Ubuntu 18.`***  
 
 
->***`-Com instalar VSCODE en Ubuntu 18.`***  
-
-sudo apt update
-sudo apt install software-properties-common apt-transport-https wget
-
-
->***`Importar la clave GPG a Ubuntu:`***  
-
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-
->***`Añadir el repositorio:`***  
-
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-
->***`Actualizar listado repositorios de Ubuntu:`***  
-
-sudo apt update
-
->***`Instalar Visual Studio Code:`***  
-
-sudo apt install code
 
 
 ## UNITAT 3. Sistemes de control de versions.
@@ -56,7 +36,7 @@ sudo apt install code
 # UNITAT 2. Práctica de Visual Studio Code.
 
 
->***`-Com instalar VSCODE en Ubuntu 18.`***  
+>***`1.-Com instalar VSCODE en Ubuntu 18.`***  
 
 sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
