@@ -8,16 +8,16 @@
 
 # INDEX:
 
->## UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
+>### UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 >***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md)***
 
->#    **-Activitat pràctica-**
+>###    **-Activitat pràctica-**
 
 >## UNITAT 2. Práctica de Visual Studio Code.
 
 >***[1.-Com instalar VSCODE en Ubuntu 18.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#unitat-2-pr%C3%A1ctica-de-visual-studio-code-1)***
 
->## UNITAT 3. Sistemes de control de versions.
+>### UNITAT 3. Sistemes de control de versions.
 
 >***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
 
