@@ -51,6 +51,34 @@ sudo apt install code
 
 ***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 
+
+
+# UNITAT 2. Práctica de Visual Studio Code.
+
+
+>***`-Com instalar VSCODE en Ubuntu 18.`***  
+
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+
+
+>***`Importar la clave GPG a Ubuntu:`***  
+
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+
+>***`Añadir el repositorio:`***  
+
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+>***`Actualizar listado repositorios de Ubuntu:`***  
+
+sudo apt update
+
+>***`Instalar Visual Studio Code:`***  
+
+sudo apt install code
+
+
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
