@@ -8,7 +8,10 @@
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
 # Index:
-## UNITAT 3. SISTEMES DE CONTROL DE VERSIONS.
+
+## UNITAT 2. Práctica de Visual Studio Code.
+
+## UNITAT 3. Sistemes de control de versions.
 
 ***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
 
