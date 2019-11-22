@@ -11,7 +11,7 @@
 >### UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 >***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md)***
 
->## UNITAT 2. Eines per al desenvolupament de programari. Práctica de Visual Studio Code.
+>## UNITAT 2. Eines per al desenvolupament de programari.
 >***[1.-Com instalar VSCODE en Ubuntu 18.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#unitat-2-pr%C3%A1ctica-de-visual-studio-code-1)***
 
 >### UNITAT 3. Sistemes de control de versions.
