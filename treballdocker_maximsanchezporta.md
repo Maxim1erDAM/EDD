@@ -1,6 +1,5 @@
 # **1ER DAM. Desarrotllament D'Aplicacions Multiplataforma. EDD. Entorns de Desenvolupament.**
 # **Docker, Contenidors, Servidor CollabNet Subversion Edge i Git**
-#    **-Activitat pràctica-**
 
  ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
@@ -12,6 +11,7 @@
 ## UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 ***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md)***
 
+#    **-Activitat pràctica-**
 
 ## UNITAT 2. Práctica de Visual Studio Code.
 
@@ -30,6 +30,7 @@
 ***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 
 
+#    **-Activitat pràctica-**
 
 # UNITAT 2. Práctica de Visual Studio Code.
 
