@@ -16,8 +16,7 @@
 ## UNITAT 2. Práctica de Visual Studio Code.
 >***`1.-Com instalar VSCODE en Ubuntu 18.`***  
 
-
-
+***[1.-Com instalar VSCODE en Ubuntu 18.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#unitat-2-pr%C3%A1ctica-de-visual-studio-code-1)***
 
 ## UNITAT 3. Sistemes de control de versions.
 
