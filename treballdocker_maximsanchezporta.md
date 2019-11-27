@@ -60,7 +60,7 @@ sudo apt install code
 
 Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instalar, desinstalar, activar i desactivar extensions. Depenent del codi que vullgam activar funcionalitats especials, com etiquetes, o vulgam fer una previsualizació del codi, tindrem que instalar diferents extensions.
 
-
+![Imatge](/imatges/imatgevscodeexts.png)
 
 
 
