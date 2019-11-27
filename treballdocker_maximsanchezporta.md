@@ -31,7 +31,7 @@
 # UNITAT 2. Práctica de Visual Studio Code.
 
 
->***`1.-Com instalar VSCODE en Ubuntu 18.`***  
+##>***`1.-Com instalar VSCODE en Ubuntu 18.`***  
 
 sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
@@ -53,10 +53,10 @@ sudo apt update
 
 sudo apt install code
 
-
->***`2.-Com instalar extensions en VSCODE en Ubuntu 18.`***  
+##>***`2.-Com instalar extensions en VSCODE en Ubuntu 18.`***  
 
 Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instalar, desinstalar, activar i desactivar extensions. Depenent del codi que vullgam activar funcionalitats especials, com etiquetes, o vulgam fer una previsualizació del codi, tindrem que instalar diferents extensions.
+
 
 
 
