@@ -31,7 +31,7 @@
 # UNITAT 2. Práctica de Visual Studio Code.
 
 
-##>***`1.-Com instalar VSCODE en Ubuntu 18.`***  
+## 1.-Com instalar VSCODE en Ubuntu 18.
 
 sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
