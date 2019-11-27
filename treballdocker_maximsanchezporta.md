@@ -54,6 +54,14 @@ sudo apt update
 sudo apt install code
 
 
+>***`2.-Com instalar extensions en VSCODE en Ubuntu 18.`***  
+
+Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instalar, desinstalar, activar i desactivar extensions. Depenent del codi que vullgam activar funcionalitats especials, com etiquetes, o vulgam fer una previsualizació del codi, tindrem que instalar diferents extensions.
+
+
+
+
+
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
 #### ***`1.¿Que és Docker? Docker es una aplicació de codi obert que permiteix que una aplicació Linux i les seues dependencies s'empaqueten como un contenidor. La virtualització basada en contenidors aïlla les aplicacions entre sí amb un sistema operatiu (OS) compartit. Actualment és compatible amb Windows, Linux i Mac, per tant es multiplataforma.`***
