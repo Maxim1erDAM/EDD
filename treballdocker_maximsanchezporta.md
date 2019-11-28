@@ -133,7 +133,7 @@ Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vsco
 A partir de la font de vscode de :https://aka.ms/vscode-java-installer-win
 
 
-![Imatge](/imatges/imatgevscodeexts.png)
+![Imatge](/imatges/javaextvscodepack.png)
 
 Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe
 
