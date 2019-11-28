@@ -31,7 +31,7 @@
 >
 >***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 >
->***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
+>***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 
 
 #    **-Activitat pràctica-**
