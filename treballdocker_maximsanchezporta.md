@@ -87,6 +87,9 @@ Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on n
 
 
 ## 4.-JAVA en VSCODE
+Instalem desde la font oficial d'Oracle el JRE o el JDK de Java, yo instalare el JRE.
+https://www.oracle.com/technetwork/java/javase/downloads/index.html
+
 
 
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
