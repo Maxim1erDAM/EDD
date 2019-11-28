@@ -33,6 +33,7 @@
 >
 >***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 
+>***[6.-Práctica RCS - Revision Control System for Linux/UNIX .](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 
 6.Practica RCS
 
