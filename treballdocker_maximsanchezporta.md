@@ -32,10 +32,8 @@
 >***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
 >
 >***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
-
+>
 >***[6.-Práctica RCS - Revision Control System for Linux/UNIX .](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix)***
-
-6.Practica RCS
 
 #    **-Activitat pràctica-**
 # UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
