@@ -4,7 +4,7 @@
 
 ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
-![Docker(Servei)](imatges/imatge0.png) 
+![Docker](/imatges/imatge0.png) 
 
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
