@@ -548,7 +548,7 @@ Limpieza, no cometer cambios:
 
 >      rcsclean -u * .c
 
-cHECK-IN/COMMIT - Registro / Confirmación:
+CHECK-IN/COMMIT - Registro / Confirmación:
 
 Cuando termine de editar el archivo, registre (confirme) sus cambios:
 
