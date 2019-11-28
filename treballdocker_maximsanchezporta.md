@@ -504,14 +504,14 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
 
 
 
-6. PRÁCTICA. RCS - Revision Control System for Linux/UNIX
+ ## 6. PRÁCTICA. RCS - Revision Control System for Linux/UNIX
 
 
-¿Qué és RCS? Revision Control System o RCS es una implementació en software del control de versions que automatiTza lEs tarees de guardar, recuperar, registrar, identificar i combinar versions d'archius. RCS es útil per archius que son modificats frecuenement, per eixemple programes informátics, documentació, gráfics de procediments, monografíes i cartes. RCS també pot ser utilitzat per a manejar archius binaris, pero amb eficacia i eficiencia reduïda. Les distintes versions son archivades mitjançant l'ajuda de la ferramenta " diff ".
+>¿Qué és RCS? Revision Control System o RCS es una implementació en software del control de versions que automatiTza lEs tarees >de guardar, recuperar, registrar, identificar i combinar versions d'archius. RCS es útil per archius que son modificats >frecuenement, per eixemple programes informátics, documentació, gráfics de procediments, monografíes i cartes. RCS també pot >ser utilitzat per a manejar archius binaris, pero amb eficacia i eficiencia reduïda. Les distintes versions son archivades >mitjançant l'ajuda de la ferramenta " diff ".
 
-RCS va ser inicialment desenvolupada en la década de 1980 actualment es part del Projecte GNU encara que es mantingut per la Purdue University.
+>RCS va ser inicialment desenvolupada en la década de 1980 actualment es part del Projecte GNU encara que es mantingut per la >Purdue University.
 
-No es posible treballar amb projectes complets ya que opera només amb archius individuals, ni permiteix que més d'un usuari treballe en el mateix archiu simultáneament, per lo que ha sigut superat per CVS i altres paquets hábils per a soportar projectes complexos. Pero quan s'está en un escenari de usuaris independents, o amb archius de configuració d'un servidor o archius de scripts de automatizació, RCS es preferit per la seua simplicitat i per que no requerix un daemon executantse per a poder treballar. CVS va ser originalment basat en RCS. 
+>No es posible treballar amb projectes complets ya que opera només amb archius individuals, ni permiteix que més d'un usuari >treballe en el mateix archiu simultáneament, per lo que ha sigut superat per CVS i altres paquets hábils per a soportar >projectes complexos. Pero quan s'está en un escenari de usuaris independents, o amb archius de configuració d'un servidor o >archius de scripts de automatizació, RCS es preferit per la seua simplicitat i per que no requerix un daemon executantse per a >poder treballar. CVS va ser originalment basat en RCS. 
 
 Como utilitzarlo en Ubuntu:
 
