@@ -534,7 +534,7 @@ CHECKOUT/revisar:
 
 En aquest cas, la última versió del archiu "file.c" s'ubicará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
 
-Para revisar una particular versió anterior:
+Per a revisar una particular versió anterior:
 
 >      co -r1.2 archivo.c
 
@@ -542,35 +542,35 @@ Revisar per a no actualizar y bloquear:
 
 >     co -u file.c
 
-STATUS/HISTORY-historial/estado:
+STATUS/HISTORY-historial/estat:
 
-Para ver la información del archivo:
+Para vore l'informació del archiu:
 
 >      rlog -b archivo.c
 
 
 QUIT / CLEAN-UP -Salir / Limpieza
 
-Limpieza, no cometer cambios:
+Neteja, no cometre cambis:
 
 >      rcsclean -u * .c
 
 CHECK-IN/COMMIT - Registro / Confirmación:
 
-Cuando termine de editar el archivo, registre (confirme) sus cambios:
+Cuando termine d'editar el archiu, registre (confirme) els seus cambis:
 
 >     ci file.c
 
-DIFF-Diferencia:
+DIFF-Diferència:
 
 >      rcsdiff file.c
 
-Esto comparará la versión del archivo en su directorio de trabajo con la del original que desprotegió.
+Esta comanda comparará la versió del archiu en el seu directori de treball , amb la del original que haurem desprotegit.
 
 >      rcsdiff -r1.2 archivo.c
 
-Compare la versión actual de trabajo con la versión 1.2.
+Comparar la versió actual de treball amb la versió 1.2.
 
-Lo siguiente comparará las dos revisiones del archivo.
+Lo següent comparará les dos revisions del archiu.
 
 >      rcsdiff -r1.1 -r1.2 archivo.c
