@@ -143,8 +143,8 @@ Información:
 	
 >`Java`
 
-    classHolaMon{
-        staticpublicvoidmain(Stringargs[] ) 
+    class HolaMon{
+        static public void main(String args[] ) 
              {System.out.println("Hola a tots! Em diuen, Máxim i estudie 1er de DAM!!");
                 }
                 }
