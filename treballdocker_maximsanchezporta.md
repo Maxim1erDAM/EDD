@@ -507,7 +507,7 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
  ## 6. PRÁCTICA. RCS - Revision Control System for Linux/UNIX
 
 
->¿Qué és RCS? Revision Control System o RCS es una implementació en software del control de versions que automatiTza lEs tarees >de guardar, recuperar, registrar, identificar i combinar versions d'archius. RCS es útil per archius que son modificats >frecuenement, per eixemple programes informátics, documentació, gráfics de procediments, monografíes i cartes. RCS també pot >ser utilitzat per a manejar archius binaris, pero amb eficacia i eficiencia reduïda. Les distintes versions son archivades >mitjançant l'ajuda de la ferramenta " diff ".
+>¿Qué és RCS? Revision Control System o RCS es una implementació en software del control de versions que automatitza les tarees de guardar, recuperar, registrar, identificar i combinar versions d'archius. RCS es útil per archius que son modificats >frecuenement, per eixemple programes informátics, documentació, gráfics de procediments, monografíes i cartes. RCS també pot >ser utilitzat per a manejar archius binaris, pero amb eficacia i eficiencia reduïda. Les distintes versions son archivades >mitjançant l'ajuda de la ferramenta " diff ".
 
 >RCS va ser inicialment desenvolupada en la década de 1980 actualment es part del Projecte GNU encara que es mantingut per la >Purdue University.
 
