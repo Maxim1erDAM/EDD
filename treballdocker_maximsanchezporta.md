@@ -108,7 +108,7 @@ En Ubuntu per comandes podriem instalar el JRE o JDK amb la versió per defecte 
 
 >sudo apt install default-jdk
 
-Per a descomprimir el .tar.gz  del paquet de Java:
+Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubuntu:
 
 >sudo tar xzvf fichero.tar.gz
 
