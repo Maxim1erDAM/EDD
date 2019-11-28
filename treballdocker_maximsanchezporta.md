@@ -87,7 +87,7 @@ Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on n
 
 
 
-## 4.-JAVA en VSCODE
+## 4.-JAVA JRE O JDK
 Instalem desde la font oficial d'Oracle el JRE o el JDK de Java:
 
 https://www.oracle.com/technetwork/java/javase/downloads/ **Fa falta crear un usuari pero podem trobarlo d'altres fonts
@@ -97,9 +97,14 @@ Elegim el paquet JRE o el JDK.
 
 ![Imatge](/imatges/JREoJDK.png)
 
-Descarreguem la versió del nostre sistema operatiu.
+Descarreguem la versió del nostre sistema operatiu. (.exe per a Windows, .rpm per a Linux, tinguent en compte si l'equip es i586-x86 o bé x64)
 
 ![Imatge](/imatges/JREoJDK2.png)
+
+
+## 5.-INSTALAR EXTENSIONS DE JAVA EN VSCODE Y UTILITZAR FERRAMENTES DE JRE O JDK
+
+
 
 
 
