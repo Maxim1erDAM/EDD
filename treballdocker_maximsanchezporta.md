@@ -113,9 +113,16 @@ Per a descomprimir el .tar.gz  del paquet de Java:
 sudo tar xzvf fichero.tar.gz
 
 
+
 ## 5.-INSTALAR EXTENSIONS DE JAVA EN VSCODE Y UTILITZAR FERRAMENTES DE JRE O JDK
 
 Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vscode-java-pack":
+
+Hem instalat la versió jre-8u231-windows-x64.exe del JRE en Windows 10.
+
+El directori de Windows al instalar JRE 8 es: C:\Program Files\java\jre1.8.0_231\bin
+
+
 
 
 
