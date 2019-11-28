@@ -97,6 +97,9 @@ Elegim el paquet JRE o el JDK.
 
 ![Imatge](/imatges/JREoJDK.png)
 
+Descarreguem la versió del nostre sistema operatiu.
+
+![Imatge](/imatges/JREoJDK2.png)
 
 
 
