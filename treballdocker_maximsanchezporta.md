@@ -503,14 +503,14 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
 
 
 
-6. PRACTICA RCS - Revision Control System for Linux/UNIX
+6. PRÁCTICA. RCS - Revision Control System for Linux/UNIX
 
 
-¿Qué és RCS? Revision Control System o RCS es una implementación en software del control de versiones que automatiza las tareas de guardar, recuperar, registrar, identificar y mezclar versiones de archivos. RCS es útil para archivos que son modificados frecuentemente, por ejemplo programas informáticos, documentación, gráficos de procedimientos, monografías y cartas. RCS también puede ser utilizado para manejar archivos binarios, pero con eficacia y eficiencia reducidas. Las distintas versiones son archivadas mediante la ayuda de la herramienta diff.
+¿Qué és RCS? Revision Control System o RCS es una implementació en software del control de versions que automatiTza lEs tarees de guardar, recuperar, registrar, identificar i combinar versions d'archius. RCS es útil per archius que son modificats frecuenement, per eixemple programes informátics, documentació, gráfics de procediments, monografíes i cartes. RCS també pot ser utilitzat per a manejar archius binaris, pero amb eficacia i eficiencia reduïda. Les distintes versions son archivades mitjançant l'ajuda de la ferramenta " diff ".
 
-RCS fue inicialmente desarrollado en la década de 1980 actualmente es parte del Proyecto GNU aunque es mantenido por la Purdue University.
+RCS va ser inicialment desenvolupada en la década de 1980 actualment es part del Projecte GNU encara que es mantingut per la Purdue University.
 
-No es posible trabajar con proyectos enteros ya que opera solamente con archivos individuales, ni permite que varios usuarios trabajen en el mismo archivo simultáneamente, por lo que ha sido superado por CVS y otros paquetes hábiles para soportar proyectos complejos. Pero cuando se está en un escenario de usuarios independientes, o con archivos de configuración de un servidor o archivos de scripts de automatización, RCS es preferido por su simplicidad y porque no requiere un daemon corriendo para poder trabajar. CVS fue originalmente basado en RCS. 
+No es posible treballar amb projectes complets ya que opera només amb archius individuals, ni permiteix que més d'un usuari treballe en el mateix archiu simultáneament, per lo que ha sigut superat per CVS i altres paquets hábils per a soportar projectes complexos. Pero quan s'está en un escenari de usuaris independents, o amb archius de configuració d'un servidor o archius de scripts de automatizació, RCS es preferit per la seua simplicitat i per que no requerix un daemon executantse per a poder treballar. CVS va ser originalment basat en RCS. 
 
 Como utilitzarlo en Ubuntu:
 
@@ -523,11 +523,11 @@ Elegix un directori de treball i afegix un enllaç al repositorio RCS.
 
 Això vincula el seu directori de treball al repositori RCS.
 
-Checkout/REVISAR:
+CHECKOUT/revisar:
 
 >      co -l file.c
 
-En aquest cas, la última versió del archiu "file.c" es colocará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
+En aquest cas, la última versió del archiu "file.c" s'ubicará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
 
 Para revisar una particular versió anterior:
 
@@ -542,19 +542,19 @@ Para ver la información del archivo:
 >      rlog -b archivo.c
 
 
-Quit / Clean-up-Salir / Limpieza
+QUIT / CLEAN-UP -Salir / Limpieza
 
 Limpieza, no cometer cambios:
 
 >      rcsclean -u * .c
 
-Registro / Confirmación:
+cHECK-IN/COMMIT - Registro / Confirmación:
 
 Cuando termine de editar el archivo, registre (confirme) sus cambios:
 
 >     ci file.c
 
-Diferencia:
+DIFF-Diferencia:
 
 >      rcsdiff file.c
 
