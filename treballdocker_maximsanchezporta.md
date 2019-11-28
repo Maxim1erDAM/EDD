@@ -544,7 +544,7 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
 
 Como utilitzarlo en Ubuntu:
 
-Elegix un directori de treball i afegix un enllaç al repositorio RCS.
+Elegix un directori de treball i afegix un enllaç al repositori RCS.
 
 >mkdir directori_de_treball
 
@@ -561,7 +561,7 @@ CHECKOUT/revisar:
 
 >      co -l archiu.c
 
-En aquest cas, la última versió del archiu "file.c" s'ubicará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
+En aquest cas, la última versió del archiu "archiu.c" s'ubicará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
 
 Per a revisar una particular versió anterior:
 
