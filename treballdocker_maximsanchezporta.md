@@ -121,9 +121,8 @@ Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubu
 
 Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vscode-java-pack":
 
-Hem instalat la versió jre-8u231-windows-x64.exe del JRE en Windows 10.
-
-El directori de Windows al instalar JRE 8 es: C:\Program Files\java\jre1.8.0_231\bin
+El directori de Windows al instalar JRE sol ser:
+"C:\Program Files\java\versiodejava\", amb els directoris "C:\Program Files\java\versiodejava\bin" i "C:\Program Files\java\versiodejava\lib".
 
 
 
