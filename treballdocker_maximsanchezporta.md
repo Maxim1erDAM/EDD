@@ -91,9 +91,9 @@ Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on n
 ## 4.-JAVA JRE O JDK
 Instalem desde la font oficial d'Oracle el JRE o el JDK de Java:
 
-https://www.oracle.com/technetwork/java/javase/downloads/ **Fa falta crear un usuari pero podem trobarlo d'altres fonts
+>https://www.oracle.com/technetwork/java/javase/downloads/ **Fa falta crear un usuari pero podem trobarlo d'altres fonts
 
-Nosaltres descarregarem el JRE. Pero podem gastar un dels dos.
+Nosaltres descarregarem el JRE. Pero podem utilitzar un dels dos.
 Elegim el paquet JRE o el JDK.
 
 ![Imatge](/imatges/JREoJDK.png)
@@ -102,15 +102,15 @@ Descarreguem la versió del nostre sistema operatiu. (.exe per a Windows, .rpm p
 
 ![Imatge](/imatges/JREoJDK2.png)
 
-En Ubuntu per comandes podriem instalar el JRE  o JDK amb la versió per defecte als repositoris d'Ubuntu, directament amb :
+En Ubuntu per comandes podriem instalar el JRE o JDK amb la versió per defecte als repositoris d'Ubuntu, directament amb :
 
-sudo apt install default-jre
+>sudo apt install default-jre
 
-sudo apt install default-jdk
+>sudo apt install default-jdk
 
 Per a descomprimir el .tar.gz  del paquet de Java:
 
-sudo tar xzvf fichero.tar.gz
+>sudo tar xzvf fichero.tar.gz
 
 
 
