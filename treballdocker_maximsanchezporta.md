@@ -145,23 +145,23 @@ Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscj
 
 Després de actualitzar VSCODE, e instalar les extensions, compilarem Java desde el terminal de MS-DOS de Windows, pero en un xicotet apartat de VSCODE.
 
-    Ejemplo de fichero HelloWorld.java en VSCODE
+Ejemplo de fichero HelloWorld.java en VSCODE
 
- class HelloWorld
-{
-    public static void main(String args[])
+     class HelloWorld
     {
-        System.out.println("Hola Mundo");
+        public static void main(String args[])
+        {
+            System.out.println("Hola Mundo");
+        }
     }
-}
 
-    Compilando Java en Terminal
+Compilando Java en Terminal
 
-javac HelloWorld.java (deja un archivo .class compilado en el directorio actual)
+    javac HelloWorld.java (deja un archivo .class compilado en el directorio actual)
 
-    Ejecutando Java en Terminal
+Ejecutando Java en Terminal
 
-java HelloWorld.class (resultado del compilado)
+    java HelloWorld.class (resultado del compilado)
 
 ![Imatge](/imatges/compilariejecutarjavaSOLUCION.png)
 
