@@ -559,23 +559,23 @@ Això vincula el seu directori de treball al repositori RCS.
 
 CHECKOUT/revisar:
 
->      co -l file.c
+>      co -l archiu.c
 
 En aquest cas, la última versió del archiu "file.c" s'ubicará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
 
 Per a revisar una particular versió anterior:
 
->      co -r1.2 archivo.c
+>      co -r1.2 archiu.c
 
 Revisar per a no actualizar y bloquear:
 
->     co -u file.c
+>     co -u archiu.c
 
 STATUS/HISTORY-historial/estat:
 
 Para vore l'informació del archiu:
 
->      rlog -b archivo.c
+>      rlog -b archiu.c
 
 
 QUIT / CLEAN-UP -Salir / Limpieza
@@ -588,18 +588,18 @@ CHECK-IN/COMMIT - Registro / Confirmación:
 
 Quan termine d'editar el archiu, registre (confirme) els seus cambis:
 
->     ci file.c
+>     ci archivo.c
 
 DIFF-Diferència:
 
->      rcsdiff file.c
+>      rcsdiff archiu.c
 
 Esta comanda comparará la versió del archiu en el seu directori de treball , amb la del original que haurem desprotegit.
 
->      rcsdiff -r1.2 archivo.c
+>      rcsdiff -r1.2 archiu.c
 
 Comparar la versió actual de treball amb la versió 1.2.
 
 Lo següent comparará les dos revisions del archiu.
 
->      rcsdiff -r1.1 -r1.2 archivo.c
+>      rcsdiff -r1.1 -r1.2 archiu.c
