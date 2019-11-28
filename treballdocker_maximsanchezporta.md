@@ -31,7 +31,7 @@
 >
 >***[3.-Assignar contrasenya a root.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3assignar-contrase%C3%B1a-a-root)***
 >
->***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4configurar-docker)***
+>***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-configurar-docker)***
 >
 >***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 >
