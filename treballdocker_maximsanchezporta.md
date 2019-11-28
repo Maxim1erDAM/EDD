@@ -41,6 +41,7 @@
 ## 1.-Com instalar VSCODE en Ubuntu 18.
 
 >***`Actualizar llistat de repositoris de Ubuntu:`***  
+
 sudo apt update
 
 >***`Instalar dependencias:`***  
