@@ -19,7 +19,7 @@
 >
 >***[3.-Programar en JAVA.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3-programar-en-java)***
 >
->***[4.-Java JRE o JDK.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-java-jre-o-jdk)***
+>***[4.-Instalació Java JRE o JDK.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-java-jre-o-jdk)***
 >
 >***[5.-Opcional. Instalacio de Netbeans 11.1](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
 
