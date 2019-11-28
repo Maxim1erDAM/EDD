@@ -552,7 +552,7 @@ Elegix un directori de treball i afegix un enllaç al repositori RCS.
 
 >mkdir RCS
 
->ln -s / home / Project / src / RCS RCS
+>ln -s / home / Projecte1 / src / RCS RCS
       
 
 Això vincula el seu directori de treball al repositori RCS.
@@ -567,7 +567,7 @@ Per a revisar una particular versió anterior:
 
 >      co -r1.2 archiu.c
 
-Revisar per a no actualizar y bloquear:
+Revisar per a no actualizar y bloquejar:
 
 >     co -u archiu.c
 
