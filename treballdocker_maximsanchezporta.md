@@ -77,7 +77,7 @@ JDK es el Java Development Kit o, en español, Herramientas de Desarrollo de Jav
 JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de Java. Conté a la Maquina Virtual de Java i altres ferramentes que permiteixen l'execució de les aplicacions Java. JRE no incorpora compiladors ni ferramentes per a desarrotllar les aplicacions Java, nomes incorpora les ferramentes per a executarles.
 
     ¿Quan deuria utilitzar-los?
-Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on nomes vas a executar aplicacions Java. PPer eixemple, si vas a desarrotllar una aplicació GUI en Java, instala el JDK. Si vols que algún amic puga vore eixa aplicació en el seu equip, ell tindrá que instalarse el JRE per a poder executar l'aplicació Java.
+Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on nomes vas a executar aplicacions Java. Per eixemple, si vas a desarrotllar una aplicació GUI en Java, instala el JDK. Si vols que algún amic puga vore eixa aplicació en el seu equip, ell tindrá que instalarse el JRE per a poder executar l'aplicació Java.
 
 *Normalment en un entorn productiu, depen, a mode de evitarte problemaes, instalar el JDK.
 *Si consideres que el teu entorn productiu será només per a execució de les teues aplicacions Java, entonces convé instalar nomes JRE. 
