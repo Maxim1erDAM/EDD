@@ -58,7 +58,7 @@ sudo apt install code
 
 ## 2.-Com instalar extensions en VSCODE.
 
-Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instalar, desinstalar, activar i desactivar extensions automáticament. Depenent del codi que vullgam activar funcionalitats especials, com etiquetes, o vulgam fer una previsualizació del codi, tindrem que instalar diferents extensions. Solen tardar a instalarse i funcionar per el seu pes, perque contenen les ferramentes per a que funcionen les extensions.
+Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instalar, desinstalar, activar i desactivar extensions automáticament. Depenent del codi que vullgam activar funcionalitats especials, com etiquetes, o vulgam fer una previsualizació del codi, tindrem que instalar diferents extensions. Solen tardar a instalarse i funcionar per el seu pes, perque contenen les ferramentes i depèndencies per a que funcionen les extensions.
 
 ![Imatge](/imatges/imatgevscodeexts.png)
 
