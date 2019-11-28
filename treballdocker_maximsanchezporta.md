@@ -167,8 +167,6 @@ cd /media/alumne/VBox_GAs_6.0.12/
 
 >***`Instalar guest additions en una maquina virtual basada en Ubuntu `***    
 
->***`alumne@alumne-VirtualBox:/media/alumne$ `***
-
 sudo sh VBoxGuestAdditions.run 
 
 
