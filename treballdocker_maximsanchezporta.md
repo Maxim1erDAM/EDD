@@ -9,7 +9,7 @@
 # Index:
 
 >### UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
->***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md)***
+>***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/mastertreballdocker_maximsanchezporta.md#unitat-1-activitat-pr%C3%A0ctica-davaluaci%C3%B3-continuada-1apac-1)***
 
 >### UNITAT 2. Eines per al desenvolupament de programari.
 >
