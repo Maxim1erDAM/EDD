@@ -34,6 +34,8 @@
 >***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 
 
+6.Practica RCS
+
 #    **-Activitat pràctica-**
 # UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 
@@ -501,5 +503,67 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
 
 
 
+6. PRACTICA RCS - Revision Control System for Linux/UNIX
 
 
+¿Qué és RCS? Revision Control System o RCS es una implementación en software del control de versiones que automatiza las tareas de guardar, recuperar, registrar, identificar y mezclar versiones de archivos. RCS es útil para archivos que son modificados frecuentemente, por ejemplo programas informáticos, documentación, gráficos de procedimientos, monografías y cartas. RCS también puede ser utilizado para manejar archivos binarios, pero con eficacia y eficiencia reducidas. Las distintas versiones son archivadas mediante la ayuda de la herramienta diff.
+
+RCS fue inicialmente desarrollado en la década de 1980 actualmente es parte del Proyecto GNU aunque es mantenido por la Purdue University.
+
+No es posible trabajar con proyectos enteros ya que opera solamente con archivos individuales, ni permite que varios usuarios trabajen en el mismo archivo simultáneamente, por lo que ha sido superado por CVS y otros paquetes hábiles para soportar proyectos complejos. Pero cuando se está en un escenario de usuarios independientes, o con archivos de configuración de un servidor o archivos de scripts de automatización, RCS es preferido por su simplicidad y porque no requiere un daemon corriendo para poder trabajar. CVS fue originalmente basado en RCS. 
+
+Como utilitzarlo en Ubuntu:
+
+Elegix un directori de treball i afegix un enllaç al repositorio RCS.
+>mkdir directori_de_treball
+>cd directori_de_treball
+>mkdir RCS
+>ln -s / home / Project / src / RCS RCS
+      
+
+Això vincula el seu directori de treball al repositori RCS.
+
+Checkout/REVISAR:
+
+>      co -l file.c
+
+En aquest cas, la última versió del archiu "file.c" es colocará en el seu directori de treball actual y es "bloquejará" per a  que altres programadors no l'utilitzen.
+
+Para revisar una particular versió anterior:
+
+>      co -r1.2 archivo.c
+
+Revisar per a no actualizar y bloquear:
+>     co -u file.c
+
+STATUS/HISTORY-historial/estado:
+
+Para ver la información del archivo:
+>      rlog -b archivo.c
+
+
+Quit / Clean-up-Salir / Limpieza
+
+Limpieza, no cometer cambios:
+
+>      rcsclean -u * .c
+
+Registro / Confirmación:
+
+Cuando termine de editar el archivo, registre (confirme) sus cambios:
+
+>     ci file.c
+
+Diferencia:
+
+>      rcsdiff file.c
+
+Esto comparará la versión del archivo en su directorio de trabajo con la del original que desprotegió.
+
+>      rcsdiff -r1.2 archivo.c
+
+Compare la versión actual de trabajo con la versión 1.2.
+
+Lo siguiente comparará las dos revisiones del archivo.
+
+>      rcsdiff -r1.1 -r1.2 archivo.c
