@@ -484,7 +484,9 @@ Revisión obtenida: 1
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives al contenidor que estem instalant, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
 
-## ***`5. - Com treballar amb GIT de Ubuntu de manera local.`***
+
+
+## 5. - Com treballar amb GIT de Ubuntu de manera local.
 
 ***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de GIT.`***
 
