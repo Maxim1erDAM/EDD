@@ -1,0 +1,807 @@
+<!DOCTYPE html><html><head>
+      <title>treballdocker_maximsanchezporta</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\m4xt3d\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.0\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="1er-dam-desarrotllament-daplicacions-multiplataforma-edd-entorns-de-desenvolupament"><strong>1ER DAM. Desarrotllament D&apos;Aplicacions Multiplataforma. EDD. Entorns de Desenvolupament.</strong></h1>
+
+<h1 class="mume-header" id="docker-contenidors-servidor-collabnet-subversion-edge-git-i-rcs"><strong>Docker, Contenidors, Servidor CollabNet Subversion Edge, Git i RCS</strong></h1>
+
+<p><em><strong>2019-Editat amb <a href="https://code.visualstudio.com/">VisualStudioCode</a> per a Windows, Linux i Mac.</strong></em></p>
+<p><img src="imatges/imatge0.png" alt="Docker(Servei)"></p>
+<h5 class="mume-header" id="docker-una-plataforma-oberta-per-a-construir-env%C3%ADar-i-executar-aplicacions-distribu%C3%AFdes">DOCKER. Una plataforma oberta per a construir, env&#xED;ar i executar aplicacions distribu&#xEF;des.</h5>
+
+<h1 class="mume-header" id="index">Index:</h1>
+
+<blockquote>
+<h3>UNITAT 1. Activitat pr&#xE0;ctica d&apos;avaluaci&#xF3; continuada 1(APAC).</h3>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#unitat-1-activitat-pr%C3%A0ctica-davaluaci%C3%B3-continuada-1apac-1">1.&gt;&gt;Redirigir a treball alojat en Github.</a></strong></em></p>
+</blockquote>
+<blockquote>
+<h3>UNITAT 2. Eines per al desenvolupament de programari.</h3>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#unitat-2-pr%C3%A1ctica-de-visual-studio-code">1.-Com instalar VSCODE en Ubuntu 18.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-extensions-en-vscode">2.-Com instalar extensions en VSCODE .</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3-programar-en-java">3.-Programar en JAVA.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-java-jre-o-jdk">4.-Instalaci&#xF3; Java JRE o JDK.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111">5.-Opcional. Instalaci&#xF3; de Netbeans 11.1</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-compilar-java-desde-vscode">6.-Compilar Java desde VSCODE</a></strong></em></p>
+</blockquote>
+<blockquote>
+<h3>UNITAT 3. Sistemes de control de versions.</h3>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox">1.-Configurar VirtualBox.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu">2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3-assignar-contrasenya-a-root">3.-Assignar contrasenya a root.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-configurar-docker">4.-Configurar docker.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local">5.-Com treballar amb GIT de Ubuntu de manera local.</a></strong></em></p>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix">6.-Pr&#xE1;ctica RCS - Revision Control System for Linux/UNIX .</a></strong></em></p>
+</blockquote>
+<h1 class="mume-header" id="-activitat-pr%C3%A0ctica-"><strong>-Activitat pr&#xE0;ctica-</strong></h1>
+
+<h1 class="mume-header" id="unitat-1-activitat-pr%C3%A0ctica-davaluaci%C3%B3-continuada-1apac">UNITAT 1. Activitat pr&#xE0;ctica d&apos;avaluaci&#xF3; continuada 1(APAC).</h1>
+
+<blockquote>
+<p><em><strong><a href="https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md">1.&gt;&gt;Redirigir a treball alojat en Github.</a></strong></em></p>
+</blockquote>
+<h1 class="mume-header" id="unitat-2-pr%C3%A1ctica-de-visual-studio-code">UNITAT 2. Pr&#xE1;ctica de Visual Studio Code.</h1>
+
+<h2 class="mume-header" id="1-com-instalar-vscode-en-ubuntu-18">1.-Com instalar VSCODE en Ubuntu 18.</h2>
+
+<blockquote>
+<p><em><strong><code>Actualizar llistat de repositoris de Ubuntu:</code></strong></em></p>
+</blockquote>
+<p>sudo apt update</p>
+<blockquote>
+<p><em><strong><code>Instalar dependencies:</code></strong></em></p>
+</blockquote>
+<p>sudo apt install software-properties-common apt-transport-https wget</p>
+<blockquote>
+<p><em><strong><code>Importar la clau GPG a Ubuntu:</code></strong></em></p>
+</blockquote>
+<p>wget -q <a href="https://packages.microsoft.com/keys/microsoft.asc">https://packages.microsoft.com/keys/microsoft.asc</a> -O- | sudo apt-key add -</p>
+<blockquote>
+<p><em><strong><code>Afegir el repositori a el llistat d&apos;Ubuntu:</code></strong></em></p>
+</blockquote>
+<p>sudo add-apt-repository &quot;deb [arch=amd64] <a href="https://packages.microsoft.com/repos/vscode">https://packages.microsoft.com/repos/vscode</a> stable main&quot;</p>
+<blockquote>
+<p><em><strong><code>Actualitzar llistat de repositoris de Ubuntu:</code></strong></em></p>
+</blockquote>
+<p>sudo apt update</p>
+<blockquote>
+<p><em><strong><code>Instalar Visual Studio Code:</code></strong></em></p>
+</blockquote>
+<p>sudo apt install code</p>
+<h2 class="mume-header" id="2-com-instalar-extensions-en-vscode">2.-Com instalar extensions en VSCODE.</h2>
+
+<p>Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instalar, desinstalar, activar i desactivar extensions autom&#xE1;ticament. Depenent del codi que vullgam activar funcionalitats especials, com etiquetes, o vulgam fer una previsualizaci&#xF3; del codi, tindrem que instalar diferents extensions. Solen tardar a instalarse i funcionar per el seu pes, perque contenen les ferramentes i dep&#xE8;ndencies per a que funcionen les extensions.</p>
+<p><img src="imatges\imatgevscodeexts.png" alt="Imatge"></p>
+<h2 class="mume-header" id="3-programar-en-java">3.-Programar en JAVA.</h2>
+
+<pre class="language-text">&#xBF;Quina es la difer&#xE8;ncia entre JDK y JRE?
+</pre>
+<p>JDK es el Java Development Kit o, en espa&#xF1;ol, Herramientas de Desarrollo de Java. Amb ell podem construir programes utilitzant el llenguatje de programaci&#xF3; Java. Incorpora ferramentes &#xFA;tils como el compilador (javac), el desensamblador de binaris (javap), debugger, entre altres ferramentes. El JDK proveu ferramentes d&apos;evaluaci&#xF3; de rendiment d&apos;aplicacions, como son VisualVM y Mission Control. Una instalaci&#xF3; de JDK ya cont&#xE9; un JRE dins del seus directoris.</p>
+<p>JRE es el Java Runtime Environment o, en espa&#xF1;ol, el Entorno de Ejecuci&#xF3;n de Java. Cont&#xE9; a la Maquina Virtual de Java i altres ferramentes que permiteixen l&apos;execuci&#xF3; de les aplicacions Java. JRE no incorpora compiladors ni ferramentes per a desarrotllar les aplicacions Java, nomes incorpora les ferramentes per a executarles.</p>
+<pre class="language-text">&#xBF;Quan deuria utilitzar-los?
+</pre>
+<p>Instales el JDK quan vols desarrotllar. Instalat nomes el JRE en els equips on nomes vas a executar aplicacions Java. Per eixemple, si vas a desarrotllar una aplicaci&#xF3; GUI en Java, instala el JDK. Si vols que alg&#xFA;n amic puga vore eixa aplicaci&#xF3; en el seu equip, ell tindr&#xE1; que instalarse el JRE per a poder executar l&apos;aplicaci&#xF3; Java.</p>
+<p>*Normalment en un entorn productiu, depen, a mode de evitarte problemes, instalar el JDK.</p>
+<p>*Si consideres que el teu entorn productiu ser&#xE1; nom&#xE9;s per a execuci&#xF3; de les teues aplicacions Java, entonces conv&#xE9; instalar nomes JRE.</p>
+<p>*Si creus que necesites alguna de las ferramentes de desarrotllament en el teu servidor per a fer probes molt b&#xE1;siques desde eixos equips, per eixemple construir una aplicaci&#xF3; xicoteta per a probar la conectivitat a una base de dades, entonces instala el JDK.</p>
+<h2 class="mume-header" id="4-java-jre-o-jdk">4.-Java JRE o JDK</h2>
+
+<p>Instalem desde la font oficial d&apos;Oracle el JRE o el JDK de Java:</p>
+<blockquote>
+<p><a href="https://www.oracle.com/technetwork/java/javase/downloads/">https://www.oracle.com/technetwork/java/javase/downloads/</a> **Fa falta crear un usuari pero podem trobarlo d&apos;altres fonts</p>
+</blockquote>
+<p>Nosaltres descarregarem el JRE. Pero podem utilitzar un dels dos.<br>
+Elegim el paquet JRE o el JDK.</p>
+<p><img src="imatges\JREoJDK.png" alt="Imatge"></p>
+<p>Descarreguem la versi&#xF3; del nostre sistema operatiu. (.exe per a Windows, .rpm per a Linux, tinguent en compte si l&apos;equip es i586-x86 o b&#xE9; x64)</p>
+<p><img src="imatges\JREoJDK2.png" alt="Imatge"></p>
+<p>En Ubuntu per comandes podriem instalar el JRE o JDK amb la versi&#xF3; per defecte als repositoris d&apos;Ubuntu, directament amb :</p>
+<blockquote>
+<p>sudo apt install default-jre</p>
+</blockquote>
+<blockquote>
+<p>sudo apt install default-jdk</p>
+</blockquote>
+<p>Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubuntu:</p>
+<blockquote>
+<p>sudo tar xzvf fichero.tar.gz</p>
+</blockquote>
+<h2 class="mume-header" id="5-opcional-instalaci%C3%B3-de-netbeans-111">5. Opcional. Instalaci&#xF3; de NetBeans 11.1</h2>
+
+<blockquote>
+<p><a href="https://github.com/Maxim1erDAM/EDD/blob/master/NetbeansInstalar.pdf">&gt;Redirigir a Guia d&#x2019;instal.laci&#xF3; de NetBeans 11.1. </a></p>
+</blockquote>
+<h2 class="mume-header" id="6-instalar-extensions-de-java-en-vscode-i-utilitzar-ferramentes-de-jre-o-jdk">6.-Instalar extensions de Java en VSCODE i utilitzar ferramentes de JRE o JDK</h2>
+
+<p>Anem a l&apos;apartat d&apos;extensions de Visual Studio Code i instalem &quot;@id:vscjava.vscode-java-pack&quot;.<br>
+A partir de la font de vscode de :<a href="https://aka.ms/vscode-java-installer-win">https://aka.ms/vscode-java-installer-win</a></p>
+<p><img src="imatges\javaextvscodepack.png" alt="Imatge"></p>
+<p>Podem descarregar tamb&#xE9; el Visual Studio Code Java Pack Installer :<a href="https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe">https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe</a></p>
+<p>*Si tenim algun problema en VSCODE o en les extensions, ho he solventat amb fer click en l&apos;opcio &quot;Buscar actualizaciones&quot;</p>
+<p><img src="imatges\solucioproblemesvscode.png" alt="Imatge"></p>
+<p>*El directori de Windows al instalar JRE sol ser:<br>
+&quot;C:\Program Files\java\jre_versiodejava&quot;, amb els directoris &quot;C:\Program Files\java\jre_versiodejava\bin&quot; i &quot;C:\Program Files\java\jre_versiodejava\lib&quot;.</p>
+<h2 class="mume-header" id="6-compilar-java-desde-vscode">6. Compilar Java desde VSCODE</h2>
+
+<p>Despr&#xE9;s de actualitzar VSCODE, e instalar les extensions, compilarem Java desde el terminal de MS-DOS de Windows, pero en un xicotet apartat de VSCODE.</p>
+<p>Ejemplo de fichero HelloWorld.java en VSCODE</p>
+<pre class="language-text"> class HelloWorld
+{
+    public static void main(String args[])
+    {
+        System.out.println(&quot;Hola Mundo&quot;);
+    }
+}
+</pre>
+<p>Compilando Java en Terminal</p>
+<pre class="language-text">javac HelloWorld.java (deja un archivo .class compilado en el directorio actual)
+</pre>
+<p>Ejecutando Java en Terminal</p>
+<pre class="language-text">java HelloWorld.class (resultado del compilado)
+</pre>
+<p><img src="imatges\compilariejecutarjavaSOLUCION.png" alt="Imatge"></p>
+<h1 class="mume-header" id="unitat-3-sistemes-de-control-de-versions">UNITAT 3. SISTEMES DE CONTROL DE VERSIONS</h1>
+
+<h4 class="mume-header" id="1que-%C3%A9s-docker-docker-es-una-aplicaci%C3%B3-de-codi-obert-que-permiteix-que-un-servei-de-linux-i-les-seues-dependencies-sempaqueten-como-un-contenidor-la-virtualitzaci%C3%B3-basada-en-contenidors-a%C3%AFlla-els-serveis-y-aplicacions-entre-s%C3%AD-amb-un-sistema-operatiu-os-compartit-actualment-%C3%A9s-compatible-amb-windows-linux-i-mac-per-tant-es-multiplataforma"><em><strong><code>1.&#xBF;Que &#xE9;s Docker? Docker es una aplicaci&#xF3; de codi obert que permiteix que un servei de Linux i les seues dependencies s&apos;empaqueten como un contenidor. La virtualitzaci&#xF3; basada en contenidors a&#xEF;lla els serveis y aplicacions entre s&#xED; amb un sistema operatiu (OS) compartit. Actualment &#xE9;s compatible amb Windows, Linux i Mac, per tant es multiplataforma.</code></strong></em></h4>
+
+<h4 class="mume-header" id="2que-%C3%A9s-subversion-edge-collabnet-subversion-edge-es-la-distribuci%C3%B3-principal-del-servidor-de-apache-subversion-subversion-edge-inclou-una-pila-completa-de-software-apache-http-server-subversion-i-viewvc-aix%C3%AD-como-una-potent-interf%C3%ADcie-dusuari-basada-en-la-web-per-administrar-el-servidor-subversion-edge-implementa-i-administra-servidors-apache-subversion-de-manera-eficient-amb-un-entorn-dusuari-centralitzat-e-intuitiu"><em><strong><code>2.&#xBF;Que &#xE9;s Subversion Edge? CollabNet Subversion Edge es la distribuci&#xF3; principal del servidor de Apache Subversion. Subversion Edge inclou una pila completa de software Apache HTTP Server, Subversion i ViewVC, aix&#xED; como una potent interf&#xED;cie d&apos;usuari basada en la web per administrar el servidor. Subversion Edge implementa i administra servidors Apache Subversion de manera eficient amb un entorn d&apos;usuari centralitzat e intuitiu.</code></strong></em></h4>
+
+<h2 class="mume-header" id="1-configurar-virtualbox">1.-Configurar VirtualBox.</h2>
+
+<blockquote>
+<p><em><strong><code>*En VirtualBox, ((ctrl+alt DRET)+c) configura la finestra o maquina virtual.</code></strong></em></p>
+</blockquote>
+<h3 class="mume-header" id="-en-configuraci%C3%B3-podem-configurar-el-portafolis-bidireccional-per-a-activarlo"><code>-En configuraci&#xF3; podem configurar el portafolis bidireccional. Per a activarlo</code>:</h3>
+
+<blockquote>
+<p><em><strong><code>((ctrl+alt DRET)+c)</code>+<code>Dispositivos&gt;Portapapeles Compartido&gt; Bidireccional</code>+<code>Dispositivos&gt;Arrastrar y Soltar&gt; Bidireccional</code></strong></em></p>
+</blockquote>
+<h2 class="mume-header" id="-com-activar-el-portafolis-i-arrastrar-i-soltar">-Com activar el portafolis i &quot;Arrastrar i soltar&quot;.</h2>
+
+<p><img src="imatges\imatge6.png" alt="Imatge"></p>
+<p><code>Asignem &quot;Bidireccional&quot; en els dos casos.</code></p>
+<h2 class="mume-header" id="-instalar-guest-additions">-Instalar &quot;Guest Additions&quot;.</h2>
+
+<p><code>Fem clic en &quot;Insertar imagen de CD de las &lt;&lt;Guest Additions&gt;&gt;&quot;. Es montar&#xE1; la unitat de CDROM amb la ISO corresponent.</code></p>
+<blockquote>
+<p><em><strong><code>alumne@alumne-VirtualBox:/media/alumne$</code></strong></em></p>
+</blockquote>
+<p>cd /media/alumne/VBox_GAs_6.0.12/</p>
+<blockquote>
+<p><em><strong><code>Instalar guest additions en una maquina virtual basada en Ubuntu</code></strong></em></p>
+</blockquote>
+<p>sudo sh VBoxGuestAdditions.run</p>
+<h2 class="mume-header" id="-ferramentes-per-a-la-m%C3%A1quina-virtual">-Ferramentes per a la m&#xE1;quina virtual.</h2>
+
+<blockquote>
+<p><em><strong><code>*Opcional. Instalar editor de text Vim</code></strong></em></p>
+</blockquote>
+<p>sudo apt install vim</p>
+<blockquote>
+<p><em><strong><code>*Opcional. Instalar terminal Tilix</code></strong></em></p>
+</blockquote>
+<p>sudo apt install tilix</p>
+<h2 class="mume-header" id="2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu">2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.</h2>
+
+<h2 class="mume-header" id="instalar-docker">Instalar docker:</h2>
+
+<blockquote>
+<p><em><strong><code>Instalar dependencies dels paquets de docker</code></strong></em></p>
+</blockquote>
+<p>sudo apt install apt-transport-https ca-certificates curl software-properties-common</p>
+<blockquote>
+<p><em><strong><code>Instalar docker des dels repositoris de docker, en Ubuntu 18</code></strong></em></p>
+</blockquote>
+<p>sudo apt install docker-ce</p>
+<h2 class="mume-header" id="3-assignar-contrasenya-a-root">3.-Assignar contrasenya a root:</h2>
+
+<blockquote>
+<p><em><strong><code>Asignar contrasenya a root e iniciar contrasenya, en el meu cas &quot;alumne&quot; es el usuari de la maquina virtual</code></strong></em></p>
+</blockquote>
+<p><code>USUARIO@USUARIO-VirtualBox: sudo passwd root</code></p>
+<p><code>&gt;root &gt;root</code> <em><strong><code>&lt;A&#xE7;&#xED; afegim la contrasenya de root i la confirmem</code></strong></em></p>
+<blockquote>
+<p><em><strong><code>En el meu cas</code></strong></em></p>
+</blockquote>
+<p>alumne@alumne-VirtualBox:<br>
+sudo passwd root</p>
+<p><code>&gt;root &gt;root</code> <em><strong><code>&lt;A&#xE7;&#xED; afegim la contrasenya de root i la confirmem</code></strong></em></p>
+<blockquote>
+<p><em><strong><code>Iniciar sessi&#xF3; amb root</code></strong></em></p>
+</blockquote>
+<p>alumne@alumne-VirtualBox:$</p>
+<p>su root</p>
+<p>Contrasenya: <em><strong><code>&lt;A&#xE7;&#xED; afegim la contrasenya de root</code></strong></em></p>
+<blockquote>
+<p>root@alumne-VirtualBox:/home/alumne# <em><strong><code>&lt;As&#xED; ja hem iniciat sesi&#xF3; amb root</code></strong></em></p>
+</blockquote>
+<h2 class="mume-header" id="4-configurar-docker">4.-Configurar docker:</h2>
+
+<blockquote>
+<p><em><strong><code>Asignem contrasenya a root</code></strong></em></p>
+</blockquote>
+<p>sudo passwd root</p>
+<blockquote>
+<p><em><strong><code>Ara inicia sessi&#xF3; en root per a no tindre problemes en docker, pero podriem utilitzar altre usuari amb privilegis com a root</code></strong></em></p>
+</blockquote>
+<p>su root</p>
+<blockquote>
+<p><em><strong><code>Descarrega la imatge busybox (mini imatge de system o de root, amb el contingut de &quot;system&quot; per a l&apos;arrel, per a poder executar aplicacions independentment de root i el directoris del sistema de l&apos;arrel d&apos;Ubuntu &quot;/&quot; de ubuntu)</code></strong></em></p>
+</blockquote>
+<p>docker pull busybox</p>
+<blockquote>
+<p><em><strong><code>Descarrega la imatge subversion edge</code></strong></em></p>
+</blockquote>
+<p>$apt install subversion</p>
+<blockquote>
+<p><em><strong><code>Afegir clau gpg de docker per a afegirla en ubuntu</code></strong></em></p>
+</blockquote>
+<p>$curl -fsSL <a href="https://download.docker.com/linux/ubuntu/gpg">https://download.docker.com/linux/ubuntu/gpg</a> | sudo apt-key add -</p>
+<blockquote>
+<p><em><strong><code>Comprobar si s&apos;ha descarregat la firma o empremta digital</code></strong></em></p>
+</blockquote>
+<p>$sudo apt-key fingerprint 0EBFCD88</p>
+<blockquote>
+<p><em><strong><code>Tornar a actualizar paquets</code></strong></em></p>
+</blockquote>
+<p>$sudo apt update</p>
+<blockquote>
+<p><em><strong><code>Instalar paquets del repositori de docker</code></strong></em></p>
+</blockquote>
+<p>$sudo apt install docker-ce</p>
+<blockquote>
+<p><em><strong><code>Actualitzar cache de la politica o privacitat de docker</code></strong></em></p>
+</blockquote>
+<p>$sudo apt-cache policy docker-ce</p>
+<h2 class="mume-header" id="comandes-i-configuraci%C3%B3-de-docker"><code>Comandes i configuraci&#xF3; de docker</code></h2>
+
+<blockquote>
+<p><em><strong><code>&gt;Iniciem sessi&#xF3; amb usuari root</code></strong></em><br>
+alumne@alumne-VirtualBox:~$<br>
+su root<br>
+Contrase&#xF1;a: <em><strong><code>&lt;As&#xED; afegim la contrase&#xF1;a de root</code></strong></em><br>
+root@alumne-VirtualBox:/home/alumne#</p>
+</blockquote>
+<blockquote>
+<p><em><strong><code>Mostrar hello world de docker</code></strong></em></p>
+</blockquote>
+<p>$docker run hello-world</p>
+<blockquote>
+<p><em><strong><code>Activar el servei de docker</code></strong></em></p>
+</blockquote>
+<p>$systemctl enable docker</p>
+<blockquote>
+<p><em><strong><code>Desactivar el servei de docker</code></strong></em></p>
+</blockquote>
+<p>$systemctl disable docker</p>
+<blockquote>
+<p><em><strong><code>Descarregar el busybox per a Docker (estructura de system o root per a contenidors o imatges de docker)</code></strong></em></p>
+</blockquote>
+<p>$docker pull busybox</p>
+<blockquote>
+<p><em><strong><code>Vore imatges que estan instalades en docker</code></strong></em></p>
+</blockquote>
+<p>$docker images</p>
+<blockquote>
+<p><em><strong><code>Mostra hola per pantalla amb la imatge de busybox per a docker</code></strong></em></p>
+</blockquote>
+<p>$docker run busybox echo &quot;hola&quot;</p>
+<blockquote>
+<p><em><strong><code>Mostra el ls per pantalla amb la imatge de busybox per a docker</code></strong></em></p>
+</blockquote>
+<p>$docker run busybox ls</p>
+<blockquote>
+<p><em><strong><code>Mostra el fitxer de text del usuari /etc/passwd de la imatge busybox</code></strong></em></p>
+</blockquote>
+<p>$docker run busybox cat /etc/passwd</p>
+<blockquote>
+<p><em><strong><code>Mostra els contenidors de la imatge</code></strong></em></p>
+</blockquote>
+<p>$docker run busybox ps aux</p>
+<blockquote>
+<p><em><strong><code>Activar mode shell dins de la imatge de docker busybox (utilitzar comandes dins de la imatge busybox)</code></strong></em></p>
+</blockquote>
+<p>$docker run -it busybox sh</p>
+<blockquote>
+<p><em><strong><code>Vore els procesos que s&apos;han creat en la sessi&#xF3; actual del usuari i docker*</code></strong></em></p>
+</blockquote>
+<p>$docker ps -a</p>
+<blockquote>
+<p><em><strong><code>Per a eliminar un contenidor, afegir el codi del contenidor eixemple:5dde99182cec</code></strong></em></p>
+</blockquote>
+<p>$docker rm 5dde99182cec</p>
+<blockquote>
+<p><em><strong><code>Ids dels contenidors que ja han acabat la tasca perque tenen status com a exited</code></strong></em></p>
+</blockquote>
+<p>$docker ps -a -q -f status=exited</p>
+<blockquote>
+<p><em><strong><code>Combinar comanda de contenidors que han acabat la tasca amb &quot;comanda de matar els procesos amb status exited&quot;.</code></strong></em></p>
+</blockquote>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>o</mi><mi>c</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>r</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">docker rm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault">c</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">m</span></span></span></span>(docker ps -a -q -fstatus=exited)</p>
+<blockquote>
+<p><em><strong><code>Executar imatge o contenidor de subversion-edge amb docker .</code></strong></em></p>
+</blockquote>
+<p>$docker run -d mamohr/subversion-edge</p>
+<blockquote>
+<p><em><strong><code>Veiem si el contenidor de subversion-edge es troba en execuci&#xF3;</code>.</strong></em></p>
+</blockquote>
+<p>$docker ps</p>
+<blockquote>
+<p><em><strong><code>Per a eliminar el contingut de subversion-edge.</code></strong></em></p>
+</blockquote>
+<p>$docker rm &quot;codi del contenidor&quot;</p>
+<blockquote>
+<p><em><strong><code>Tornar a executar subversion-edge correctament (si no te les images les descarrega).</code></strong></em></p>
+</blockquote>
+<p>$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080  --name svn-server mamohr/subversion-edge</p>
+<blockquote>
+<p><em><strong><code>Tinguent en compte que la carpeta &quot;/opt/csvn/data&quot; del contenidor, &#xE9;s on el Servidor Subversion guarda tota la informaci&#xF3; que genera, la sincronitzarem amb el volum(directori) &quot;/srv/svn-data&quot; . Amb a&#xE7;&#xF2; ja podem accedir al servidor via web, generar usuaris, i generar repositoris guardant els canvis. Per tant , executarem el contenidor indicant els ports que es redirigir&#xE1;n del contenidor a la maquina local.</code></strong></em></p>
+</blockquote>
+<p>$docker run -d -p 3343:3343 -p 4434:4434 -p 18080:18080 -v /srv/svn-data:/opt/csvn/data --name svn-server mamohr/subversion-edge</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>$<br>
+Unable to find image &apos;mamohr/subversion-edge:latest&apos; locally<br>
+latest: Pulling from mamohr/subversion-edge<br>
+469cfcc7a4b3: Pull complete<br>
+7e814dc876c6: Pull complete<br>
+144c1c97a750: Pull complete<br>
+17eb6ecf9d0a: Pull complete<br>
+12492ca50197: Pull complete<br>
+32dc87336990: Pull complete<br>
+Digest: sha256:547356c2d4c2b2a7eb6e8f7b84de52118ca7089b98d2400f7c723e2280022ab6<br>
+Status: Downloaded newer image for mamohr/subversion-edge:latest<br>
+77c16450dbb29a614a205e95f9c3ca2072f156dc46a67e5a6b2e1b296e660d03</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><em><strong><code>**Instalar el contenidor i les dependencies del servidor de Subversion Edge de manera manual, si la comanda anterior no el descarrega</code></strong></em></p>
+</blockquote>
+<p>$apt install subversion</p>
+<blockquote>
+<p><em><strong><code>*Accedir a la pagina http de subversion edge amb usuari:admin contrase&#xF1;a:admin , crear un usuari en el meu cas &quot;alumne123.&quot; i el repositori &quot;Projecte1&quot;</code></strong></em></p>
+</blockquote>
+<blockquote>
+<p><a href="http://127.0.0.1:3343/csvn/">http://127.0.0.1:3343/csvn/</a></p>
+</blockquote>
+<blockquote>
+<p><em><strong><code>Pulsar start per a engegar el servidor subversion desde el navegador.</code></strong></em></p>
+</blockquote>
+<blockquote>
+<p><em><strong><code>Crear usuari &quot;alumne123.&quot; i el repositori &quot;Projecte1&quot; desde el servidor subversionedge</code></strong></em></p>
+</blockquote>
+<blockquote>
+<p><em><strong><code>Detindre el servei de subversion (es troba renombrat aix&#xED; en la ordre de ejecuci&#xF3; del contenidor)</code></strong></em></p>
+</blockquote>
+<p>$docker stop svn-server</p>
+<blockquote>
+<p><em><strong><code>Activar el servei de subversion (es troba renombrat aix&#xED; en la ordre de ejecuci&#xF3; del contenidor)</code></strong></em></p>
+</blockquote>
+<p>$docker start svn-server</p>
+<h2 class="mume-header" id="accedim-al-servidor-amb-el-usuari-administrador-admin-i-contrase%C3%B1a-admin-per-defecte-per-a-subversion"><code>Accedim al servidor amb el usuari administrador &quot;admin&quot; i contrase&#xF1;a &apos;admin&apos; per defecte per a subversion.</code></h2>
+
+<p><img src="imatges\imatge1.png" alt="Imatge"></p>
+<h2 class="mume-header" id="accedim-a-la-pantalla-de-creaci%C3%B3-de-usuaris"><code>Accedim a la pantalla de creaci&#xF3; de usuaris.</code></h2>
+
+<p><img src="imatges\imatge2.png" alt="Imatge"></p>
+<p><img src="imatges\imatge3.png" alt="Imatge"></p>
+<h2 class="mume-header" id="crearem-un-usuari-hem-creat-alumne123-i-afegim-tots-els-permisos-en-el-cas-de-que-siga-administrador"><code>Crearem un usuari , hem creat &quot;alumne123.&quot; i afegim tots els permisos en el cas de que siga administrador.</code></h2>
+
+<p><img src="imatges\imatge4.png" alt="Imatge"></p>
+<blockquote>
+<p><em><strong><code>Donar permisos i accesibilitat al usuari, a este enlla&#xE7; de host en la red local i crear els seus directoris de tags,trunk i branches.*Desde usuari root amb password asignada amb passwd.</code></strong></em></p>
+</blockquote>
+<h2 class="mume-header" id="donem-permisos-i-es-crearan-els-directoris">Donem permisos i es crearan els directoris</h2>
+
+<blockquote>
+<p><em><strong><code>svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.</code></strong></em></p>
+</blockquote>
+<p><code>A alumne123./tags</code></p>
+<p><code>A alumne123./trunk</code></p>
+<p><code>A alumne123./branches</code></p>
+<p><code>Revisi&#xF3;n obtenida: 1</code></p>
+<blockquote>
+<p><em><strong><code>Donar permisos i accesibilitat al usuari, a l&apos;enlla&#xE7; de host de la red local i crear els seus directoris de tags,trunk i branches.* Desde usuari administrador de Ubuntu amb un altre nom com a usuari &quot;alumne&quot;.</code></strong></em></p>
+</blockquote>
+<blockquote>
+<p><em><strong><code>alumne@alumne-VirtualBox:~$ sudo svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.</code></strong></em><br>
+Reino de autentificaci&#xF3;n: <a href="http://127.0.0.1:18080">http://127.0.0.1:18080</a> CollabNet Subversion Repository<br>
+Clave de &apos;alumne123.&apos;: **********<br>
+<code>-----------------------------------------------------------------------</code><br>
+ATENCI&#xD3;N!  Su contrase&#xF1;a para el reino de autenticaci&#xF3;n:<br>
+<a href="http://127.0.0.1:18080">http://127.0.0.1:18080</a> CollabNet Subversion Repository<br>
+solo se puede almacenar en discos sin cifrar.  Est&#xE1; avisado de configurar<br>
+su sistema de manera que Subversion pueda almacenar contrase&#xF1;as cifradas, si<br>
+es posible.  Vea la documentaci&#xF3;n para tener m&#xE1;s detalles.<br>
+Puede evitar futuras apariciones de este aviso configurando el valor<br>
+de la opci&#xF3;n &#xAB;store-plaintext-passwords&#xBB; a &#xAB;yes&#xBB; o &#xAB;no&#xBB; en<br>
+&#xAB;/home/alumne/.subversion/servers&#xBB;.<br>
+<code>-----------------------------------------------------------------------</code><br>
+Almacenar la clave sin cifrar (s&#xED;/no)? S<br>
+Por favor ingrese &apos;s&#xED;&apos; o &apos;no&apos;: Si<br>
+Por favor ingrese &apos;s&#xED;&apos; o &apos;no&apos;: S&#xED;<br>
+A alumne123./tags<br>
+A alumne123./trunk<br>
+A alumne123./branches<br>
+Revisi&#xF3;n obtenida: 1</p>
+</blockquote>
+<p><img src="imatges\imatge5.png" alt="Imatge"></p>
+<p><em><strong><code>La contrase&#xF1;a de subversion edge la demana gr&#xE1;ficament, &#xE9;s la que es troba asignada per defecte per a l&apos;administraci&#xF3; del servidor en apache de subversion edge.</code></strong></em></p>
+<h3 class="mume-header" id="finalment-subversion-edge-esta-configurat-i-funcionant-podem-fer-el-mateix-amb-cualsevol-contenidor-per-a-docker-i-amb-un-procediment-paregut-el-servei-funcionar%C3%ADa-de-la-mateixa-manera-utilitzant-els-directoris-de-docker-tinguem-en-compte-que-els-directoris-de-configuracio-de-optcsvndata-i-srvsvn-data-son-relatives-al-contenidor-que-estem-instalant-i-poden-cambiar-o-no-els-directoris-segons-la-seua-configuracio-per-defecte-i-el-metode-de-instalaci%C3%B3-al-instalar-els-contenidors-de-altres-serveis-disponibles"><em><strong><code>Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor per a Docker, i amb un procediment paregut el servei funcionar&#xED;a de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de &quot;/opt/csvn/data&quot; i &quot;/srv/svn-data&quot; son relatives al contenidor que estem instalant, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalaci&#xF3; al instalar els contenidors de altres serveis disponibles .</code></strong></em></h3>
+
+<h2 class="mume-header" id="5-com-treballar-amb-git-de-ubuntu-de-manera-local">5. - Com treballar amb GIT de Ubuntu de manera local.</h2>
+
+<p><em><strong><code>Instalem GIT des dels repositoris d&apos;Ubuntu. Li asignem una configuraci&#xF3; b&#xE1;sica d&apos;usuari de GIT.</code></strong></em></p>
+<p><img src="imatges\imatge7.png" alt="Imatge"></p>
+<p><em><strong><code>Podem asignar l&apos;editor per defecte amb la l&#xED;nea</code></strong></em></p>
+<p>sudo git config --global core.editor &quot;nomdeeditor&quot;</p>
+<p><em><strong><code>Podem mostrar les variables de configuraci&#xF3; amb:</code></strong></em></p>
+<p>sudo git config --list</p>
+<p><img src="imatges\imatge8.png" alt="Imatge"></p>
+<p><em><strong><code>Com crear un commit, al modificar o crear o eliminar archius:</code></strong></em></p>
+<p>Eixemple: sudo git commit -a -m &quot;Primer Commit&quot;</p>
+<p><img src="imatges\imatge9.png" alt="Imatge"></p>
+<p><em><strong><code>Mostrar commits creats:</code></strong></em></p>
+<p>Eixemple: sudo git log</p>
+<p><em><strong><code>Creem un parell de fitxers de text:</code></strong></em></p>
+<p>Eixemple:<br>
+<code>sudo touch fitxer 1.md</code><br>
+<code>sudo touch fitxer 2.md</code></p>
+<p><em><strong><code>Creem un altre commit de prova :</code></strong></em></p>
+<p>Eixemple: sudo sudo git commit -a -m &quot;nous canvis&quot;</p>
+<p><em><strong><code>I tornem a mostrar l&apos;informaci&#xF3; dels commits amb:</code></strong></em></p>
+<p>sudo git log</p>
+<p><img src="imatges\imatge11.png" alt="Imatge"></p>
+<h2>6. PR&#xC1;CTICA. RCS - Revision Control System for Linux/UNIX</h2>
+<blockquote>
+<p>&#xBF;Qu&#xE9; &#xE9;s RCS? Revision Control System o RCS es una implementaci&#xF3; en software del control de versions que automatitza les tarees de guardar, recuperar, registrar, identificar i combinar versions d&apos;archius. RCS es &#xFA;til per archius que son modificats &gt;frecuenement, per eixemple programes inform&#xE1;tics, documentaci&#xF3;, gr&#xE1;fics de procediments, monograf&#xED;es i cartes. RCS tamb&#xE9; pot &gt;ser utilitzat per a manejar archius binaris, pero amb eficacia i eficiencia redu&#xEF;da. Les distintes versions son archivades &gt;mitjan&#xE7;ant l&apos;ajuda de la ferramenta &quot; diff &quot;.</p>
+</blockquote>
+<blockquote>
+<p>RCS va ser inicialment desenvolupada en la d&#xE9;cada de 1980 actualment es part del Projecte GNU encara que es mantingut per la &gt;Purdue University.</p>
+</blockquote>
+<blockquote>
+<p>No es posible treballar amb projectes complets ya que opera nom&#xE9;s amb archius individuals, ni permiteix que m&#xE9;s d&apos;un usuari &gt;treballe en el mateix archiu simult&#xE1;neament, per lo que ha sigut superat per CVS i altres paquets h&#xE1;bils per a soportar &gt;projectes complexos. Pero quan s&apos;est&#xE1; en un escenari de usuaris independents, o amb archius de configuraci&#xF3; d&apos;un servidor o &gt;archius de scripts de automatizaci&#xF3;, RCS es preferit per la seua simplicitat i per que no requerix un daemon executantse per a &gt;poder treballar. CVS va ser originalment basat en RCS.</p>
+</blockquote>
+<p>Como utilitzarlo en Ubuntu:</p>
+<p>Elegix un directori de treball i afegix un enlla&#xE7; al repositori RCS.</p>
+<blockquote>
+<p>mkdir directori_de_treball</p>
+</blockquote>
+<blockquote>
+<p>cd directori_de_treball</p>
+</blockquote>
+<blockquote>
+<p>mkdir RCS</p>
+</blockquote>
+<blockquote>
+<p>ln -s / home / Projecte1 / src / RCS RCS</p>
+</blockquote>
+<p>Aix&#xF2; vincula el seu directori de treball al repositori RCS.</p>
+<p>CHECKOUT/revisar:</p>
+<blockquote>
+<pre class="language-text"> co -l archiu.c
+</pre>
+</blockquote>
+<p>En aquest cas, la &#xFA;ltima versi&#xF3; del archiu &quot;archiu.c&quot; s&apos;ubicar&#xE1; en el seu directori de treball actual y es &quot;bloquejar&#xE1;&quot; per a  que altres programadors no l&apos;utilitzen.</p>
+<p>Per a revisar una particular versi&#xF3; anterior:</p>
+<blockquote>
+<pre class="language-text"> co -r1.2 archiu.c
+</pre>
+</blockquote>
+<p>Revisar per a no actualizar y bloquejar:</p>
+<blockquote>
+<pre class="language-text">co -u archiu.c
+</pre>
+</blockquote>
+<p>STATUS/HISTORY-historial/estat:</p>
+<p>Para vore l&apos;informaci&#xF3; del archiu:</p>
+<blockquote>
+<pre class="language-text"> rlog -b archiu.c
+</pre>
+</blockquote>
+<p>QUIT / CLEAN-UP -Salir / Limpieza</p>
+<p>Neteja, no cometre cambis:</p>
+<blockquote>
+<pre class="language-text"> rcsclean -u * .c
+</pre>
+</blockquote>
+<p>CHECK-IN/COMMIT - Registro / Confirmaci&#xF3;n:</p>
+<p>Quan termine d&apos;editar el archiu, registre (confirme) els seus cambis:</p>
+<blockquote>
+<pre class="language-text">ci archivo.c
+</pre>
+</blockquote>
+<p>DIFF-Difer&#xE8;ncia:</p>
+<blockquote>
+<pre class="language-text"> rcsdiff archiu.c
+</pre>
+</blockquote>
+<p>Esta comanda comparar&#xE1; la versi&#xF3; del archiu en el seu directori de treball , amb la del original que haurem desprotegit.</p>
+<blockquote>
+<pre class="language-text"> rcsdiff -r1.2 archiu.c
+</pre>
+</blockquote>
+<p>Comparar la versi&#xF3; actual de treball amb la versi&#xF3; 1.2.</p>
+<p>Lo seg&#xFC;ent comparar&#xE1; les dos revisions del archiu.</p>
+<blockquote>
+<pre class="language-text"> rcsdiff -r1.1 -r1.2 archiu.c
+</pre>
+</blockquote>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
