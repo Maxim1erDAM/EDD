@@ -22,6 +22,7 @@
 >***[4.-Instalació Java JRE o JDK.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-java-jre-o-jdk)***
 >
 >***[5.-Opcional. Instalació de Netbeans 11.1](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
+>***[6.- Compilar Java desde VSCODE](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
 
 
 >### UNITAT 3. Sistemes de control de versions.
@@ -141,7 +142,7 @@ Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscj
 "C:\Program Files\java\jre_versiodejava\", amb els directoris "C:\Program Files\java\jre_versiodejava\bin" i "C:\Program Files\java\jre_versiodejava\lib".
 
 
-## 7. Compilar Java desde VSCODE
+## 6. Compilar Java desde VSCODE
 
 Després de actualitzar VSCODE, e instalar les extensions, compilarem Java desde el terminal de MS-DOS de Windows, pero en un xicotet apartat de VSCODE.
 
