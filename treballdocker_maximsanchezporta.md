@@ -23,7 +23,7 @@
 >
 >***[5.-Opcional. Instalació de Netbeans 11.1](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
 >
->***[6.- Compilar Java desde VSCODE](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
+>***[6.-Compilar Java desde VSCODE](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
 
 
 >### UNITAT 3. Sistemes de control de versions.
