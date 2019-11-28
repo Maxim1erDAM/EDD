@@ -69,8 +69,7 @@ JDK es el Java Development Kit o, en español, Herramientas de Desarrollo de Jav
 
 JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de Java. Contiene a la JVM y otras herramientas que permiten la ejecución de las aplicaciones Java. JRE no posee compiladores ni herramientas para desarrollar las aplicaciones Java, solo posee las herramientas para ejecutarlas.
 
-¿Cuándo debo usar uno u otro?
-
+    ¿Cuando debo usar uno o otro?
 Te instalas el JDK cuando quieres desarrollar. Te instalas solamente el JRE en los equipos donde solo vas a ejecutar aplicaciones Java. Por ejemplo, si vas a desarrollar una aplicación GUI en Java, entonces en tu equipo instalas el JDK. Si quieres que algún amigo pueda ver esa aplicación en su equipo, él tendrá que instalarse el JRE en su equipo para poder ejecutar la aplicación que le envíes.
 
 Normalmente en un entorno productivo, cual debería utilizarse
