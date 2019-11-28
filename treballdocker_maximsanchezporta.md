@@ -62,7 +62,29 @@ Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instala
 
 ![Imatge](/imatges/imatgevscodeexts.png)
 
+## 3.-Programar en JAVA.
+    ¿Cuál es la diferencia entre JDK y JRE?
 
+JDK es el Java Development Kit o, en español, Herramientas de Desarrollo de Java. Sirve para construir programas usando el lenguaje de programación Java. Trae herramientas útiles como el compilador (javac), el desensamblador de binarios (javap), debugger, entre otras herramientas. Incluso, el JDK provee herramientas de evaluación de rendimiento de aplicaciones, como son VisualVM y Mission Control. Todo esto y más herramientas. Una instalación de JDK ya contiene un JRE dentro de las carpetas.
+
+JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de Java. Contiene a la JVM y otras herramientas que permiten la ejecución de las aplicaciones Java. JRE no posee compiladores ni herramientas para desarrollar las aplicaciones Java, solo posee las herramientas para ejecutarlas.
+
+¿Cuándo debo usar uno u otro?
+
+Te instalas el JDK cuando quieres desarrollar. Te instalas solamente el JRE en los equipos donde solo vas a ejecutar aplicaciones Java. Por ejemplo, si vas a desarrollar una aplicación GUI en Java, entonces en tu equipo instalas el JDK. Si quieres que algún amigo pueda ver esa aplicación en su equipo, él tendrá que instalarse el JRE en su equipo para poder ejecutar la aplicación que le envíes.
+
+Normalmente en un entorno productivo, cual debería utilizarse
+
+Depende. A modo de evitarte problemas, instala el JDK.
+
+Si consideras que tu entorno productivo será solamente para ejecución de tus aplicaciones Java, entonces conviene instalar solo JRE. S
+
+*Si crees que necesitas alguna de las herramientas de desarrollo en tu servidor para hacer pruebas muy básicas desde esos equipos p.e. construir una aplicación pequeña para probar la conectividad a la base de datos, entonces instala el JDK.
+
+*Hay que tener consideración si tus aplicaciones necesitan crear código en el aire o convertir algún elemento a código y luego ejecutarlo. Tal es el caso de los JSPs, que el servidor de aplicaciones va a convertir cada JSP en un Servlet, por lo cual es necesario tener instalado el JDK en el servidor.
+
+
+## 4.-JAVA en VSCODE
 
 
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
