@@ -43,7 +43,7 @@
 >***`Actualizar llistat de repositoris de Ubuntu:`***  
 sudo apt update
 
->***`Instalar dependencias :`***  
+>***`Instalar dependencias:`***  
 
 sudo apt install software-properties-common apt-transport-https wget
 
