@@ -44,19 +44,19 @@
 
 sudo apt update
 
->***`Instalar dependencias:`***  
+>***`Instalar dependencies:`***  
 
 sudo apt install software-properties-common apt-transport-https wget
 
->***`Importar la clave GPG a Ubuntu:`***  
+>***`Importar la clau GPG a Ubuntu:`***  
 
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 
->***`Añadir el repositorio:`***  
+>***`Añadir el repositori:`***  
 
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 
->***`Actualizar listado repositorios de Ubuntu:`***  
+>***`Actualitzar llistat de repositoris de Ubuntu:`***  
 
 sudo apt update
 
