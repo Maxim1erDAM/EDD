@@ -115,7 +115,7 @@ Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubu
 ## 5. Opcional. Instalació de NetBeans 11.1 
 
 
->***[-Guia d’instal.lació de NetBeans 11.1. ](https://moodle.ieseljust.com/pluginfile.php/22086/mod_resource/content/1/NetbeansInstalar.pdf)
+>[>Redirigir a Guia d’instal.lació de NetBeans 11.1. ](https://moodle.ieseljust.com/pluginfile.php/22086/mod_resource/content/1/NetbeansInstalar.pdf)
 
 ## 6.-INSTALAR EXTENSIONS DE JAVA EN VSCODE Y UTILITZAR FERRAMENTES DE JRE O JDK
 
