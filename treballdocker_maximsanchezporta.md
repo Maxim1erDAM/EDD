@@ -82,9 +82,9 @@ Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on n
 
 *Normalment en un entorn productiu, depen, a mode de evitarte problemes, instalar el JDK.
 
-**Si consideres que el teu entorn productiu será només per a execució de les teues aplicacions Java, entonces convé instalar nomes JRE. 
+*Si consideres que el teu entorn productiu será només per a execució de les teues aplicacions Java, entonces convé instalar nomes JRE. 
 
-***Si creus que necesites alguna de las ferramentes de desarrotllament en el teu servidor per a fer probes molt básiques desde eixos equips, per eixemple construir una aplicació xicoteta per a probar la conectivitat a una base de dades, entonces instala el JDK.
+*Si creus que necesites alguna de las ferramentes de desarrotllament en el teu servidor per a fer probes molt básiques desde eixos equips, per eixemple construir una aplicació xicoteta per a probar la conectivitat a una base de dades, entonces instala el JDK.
 
 
 
