@@ -78,7 +78,7 @@ Depende. A modo de evitarte problemas, instala el JDK.
 
 Si consideras que tu entorno productivo será solamente para ejecución de tus aplicaciones Java, entonces conviene instalar solo JRE. S
 
-*Si crees que necesitas alguna de las herramientas de desarrollo en tu servidor para hacer pruebas muy básicas desde esos equipos p.e. construir una aplicación pequeña para probar la conectividad a la base de datos, entonces instala el JDK.
+*Si crees que necesitas alguna de las herramientas de desarrollo en tu servidor para hacer pruebas muy básicas desde esos equipos p.e. construir una aplicación pequeña para probar la conectividad a una base de datos, entonces instala el JDK.
 
 *Hay que tener consideración si tus aplicaciones necesitan crear código en el aire o convertir algún elemento a código y luego ejecutarlo. Tal es el caso de los JSPs, que el servidor de aplicaciones va a convertir cada JSP en un Servlet, por lo cual es necesario tener instalado el JDK en el servidor.
 
