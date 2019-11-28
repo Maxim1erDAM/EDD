@@ -557,7 +557,7 @@ Neteja, no cometre cambis:
 
 CHECK-IN/COMMIT - Registro / Confirmación:
 
-Cuando termine d'editar el archiu, registre (confirme) els seus cambis:
+Quan termine d'editar el archiu, registre (confirme) els seus cambis:
 
 >     ci file.c
 
