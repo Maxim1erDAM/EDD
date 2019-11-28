@@ -1,12 +1,15 @@
 # **1ER DAM. Desarrotllament D'Aplicacions Multiplataforma. EDD. Entorns de Desenvolupament.**
+
 # **Docker, Contenidors, Servidor CollabNet Subversion Edge, Git i RCS**
 
- ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
+***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
 ![Docker(Servei)](imatges/imatge0.png) 
+
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
 # Index:
+
 
 >### UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 >***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#unitat-1-activitat-pr%C3%A0ctica-davaluaci%C3%B3-continuada-1apac-1)***
@@ -25,7 +28,6 @@
 >
 >***[6.-Compilar Java desde VSCODE](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-compilar-java-desde-vscode)***
 
-
 >### UNITAT 3. Sistemes de control de versions.
 >***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
 >
@@ -40,6 +42,7 @@
 >***[6.-Práctica RCS - Revision Control System for Linux/UNIX .](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix)***
 
 #    **-Activitat pràctica-**
+
 # UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 
 >***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md)***
@@ -88,6 +91,7 @@ JDK es el Java Development Kit o, en español, Herramientas de Desarrollo de Jav
 JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de Java. Conté a la Maquina Virtual de Java i altres ferramentes que permiteixen l'execució de les aplicacions Java. JRE no incorpora compiladors ni ferramentes per a desarrotllar les aplicacions Java, nomes incorpora les ferramentes per a executarles.
 
     ¿Quan deuria utilitzar-los?
+    
 Instales el JDK quan vols desarrotllar. Instalat nomes el JRE en els equips on nomes vas a executar aplicacions Java. Per eixemple, si vas a desarrotllar una aplicació GUI en Java, instala el JDK. Si vols que algún amic puga vore eixa aplicació en el seu equip, ell tindrá que instalarse el JRE per a poder executar l'aplicació Java.
 
 *Normalment en un entorn productiu, depen, a mode de evitarte problemes, instalar el JDK.
@@ -99,6 +103,7 @@ Instales el JDK quan vols desarrotllar. Instalat nomes el JRE en els equips on n
 
 
 ## 4.-Java JRE o JDK
+
 Instalem desde la font oficial d'Oracle el JRE o el JDK de Java:
 
 >https://www.oracle.com/technetwork/java/javase/downloads/ **Fa falta crear un usuari pero podem trobarlo d'altres fonts
@@ -143,6 +148,7 @@ Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscj
 ![Imatge](/imatges/solucioproblemesvscode.png)
 
 *El directori de Windows al instalar JRE sol ser:
+
 "C:\Program Files\java\jre_versiodejava\", amb els directoris "C:\Program Files\java\jre_versiodejava\bin" i "C:\Program Files\java\jre_versiodejava\lib".
 
 
@@ -265,14 +271,11 @@ Contrasenya: ***`<Açí afegim la contrasenya de root`***
 
 >root@alumne-VirtualBox:/home/alumne# ***`<Así ja hem iniciat sesió amb root`***
 
-
-
 ## 4.-Configurar docker:
 
 >***`Asignem contrasenya a root`*** 
 
 sudo passwd root
-
 
 >***`Ara inicia sessió en root per a no tindre problemes en docker, pero podriem utilitzar altre usuari amb privilegis com a root`***  
 
@@ -443,8 +446,6 @@ $docker start svn-server
 
 >***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk i branches.*Desde usuari root amb password asignada amb passwd.   `***
 
-
-
 ## Donem permisos i es crearan els directoris 
 
 >***`svn co http://127.0.0.1:18080/svn/Projecte1 alumne123.`***
@@ -486,8 +487,6 @@ Revisión obtenida: 1
 ***`La contraseña de subversion edge la demana gráficament, és la que es troba asignada per defecte per a l'administració del servidor en apache de subversion edge.`***
 
 ### ***`Finalment, subversion edge esta configurat i funcionant, podem fer el mateix amb cualsevol contenidor  per a Docker, i amb un procediment paregut el servei funcionaría de la mateixa manera utilitzant els directoris de Docker. Tinguem en compte que els directoris de configuracio de  "/opt/csvn/data" i "/srv/svn-data" son relatives al contenidor que estem instalant, i poden cambiar o no els directoris segons la seua configuracio per defecte i el metode de instalació al instalar els contenidors de altres serveis disponibles .  `***
-
-
 
 ## 5. - Com treballar amb GIT de Ubuntu de manera local.
 
