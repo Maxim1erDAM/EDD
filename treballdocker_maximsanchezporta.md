@@ -6,7 +6,7 @@
 ![Docker(Servei)](imatges/imatge0.png) 
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
-# INDEX:
+# Index:
 
 >### UNITAT 1. Activitat pràctica d'avaluació continuada 1(APAC).
 >***[1.>>Redirigir a treball alojat en Github.](https://github.com/Maxim1erDAM/EDD/blob/master/treballAPACunitat1.md)***
@@ -88,7 +88,7 @@ Instales el JDK quan vols desenvolupar. Instalat nomes el JRE en els equips on n
 
 
 
-## 4.-JAVA JRE O JDK
+## 4.-Java JRE o JDK
 Instalem desde la font oficial d'Oracle el JRE o el JDK de Java:
 
 >https://www.oracle.com/technetwork/java/javase/downloads/ **Fa falta crear un usuari pero podem trobarlo d'altres fonts
@@ -117,7 +117,7 @@ Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubu
 
 >[>Redirigir a Guia d’instal.lació de NetBeans 11.1. ](https://moodle.ieseljust.com/pluginfile.php/22086/mod_resource/content/1/NetbeansInstalar.pdf)
 
-## 6.-INSTALAR EXTENSIONS DE JAVA EN VSCODE Y UTILITZAR FERRAMENTES DE JRE O JDK
+## 6.-Instalar extensions de Java en VSCODE i utilitzar ferramentes de JRE o JDK
 
 Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vscode-java-pack":
 
