@@ -143,16 +143,18 @@ Información:
 	
 >`Java`
 
-    class HolaMon{
-        static public void main(String args[] ) 
-             {System.out.println("Hola a tots! Em diuen, Máxim i estudie 1er de DAM!!");
-                }
-                }
+     class HelloWorld
+    {
+        public static void main(String args[])
+        {
+            System.out.println("Hola Mundo");
+        }
+    }
     
 >`Compilando Java en Terminal`
     
-    javac Hello.java (deja un archivo .class compilado en el directorio actual)
+    javac HelloWorld.java (deja un archivo .class compilado en el directorio actual)
     
 >`Ejecutando Java en Terminal`
     
-    java Hello.class (resultado del compilado)
+    java HelloWorld.class (resultado del compilado)
