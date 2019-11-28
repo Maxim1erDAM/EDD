@@ -138,12 +138,15 @@ Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscj
 ![Imatge](/imatges/solucioproblemesvscode.png)
 
 *El directori de Windows al instalar JRE sol ser:
-"C:\Program Files\java\versiodejava\", amb els directoris "C:\Program Files\java\versiodejava\bin" i "C:\Program Files\java\versiodejava\lib".
+"C:\Program Files\java\jre_versiodejava\", amb els directoris "C:\Program Files\java\jre_versiodejava\bin" i "C:\Program Files\java\jre_versiodejava\lib".
 
 
+## 7. Compilar Java desde VSCODE
+
+Després de actualitzar VSCODE, e instalar les extensions, compilarem Java desde el terminal de MS-DOS de Windows, pero en un xicotet apartat de VSCODE.
 
 
-
+![Imatge](/imatges/compilariejecutarjavaSOLUCION.png)
 
 # UNITAT 3. SISTEMES DE CONTROL DE VERSIONS
 
