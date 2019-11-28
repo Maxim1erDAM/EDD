@@ -79,7 +79,7 @@ Podem buscar e instalar extensions desde aquest apartat de VSCODE, podem instala
 ## 3.-Programar en JAVA.
     ¿Quina es la diferència entre JDK y JRE?
 
-JDK es el Java Development Kit o, en español, Herramientas de Desarrollo de Java. Servix per a construir programes utilitzant el llenguatje de programació Java. Incorpora ferramentes útils como el compilador (javac), el desensamblador de binaris (javap), debugger, entre altres ferramentes. El JDK proveu ferramentes d'evaluació de rendiment d'aplicacions, como son VisualVM y Mission Control. Una instalació de JDK ya conté un JRE dins del seus directoris.
+JDK es el Java Development Kit o, en español, Herramientas de Desarrollo de Java. Amb ell podem construir programes utilitzant el llenguatje de programació Java. Incorpora ferramentes útils como el compilador (javac), el desensamblador de binaris (javap), debugger, entre altres ferramentes. El JDK proveu ferramentes d'evaluació de rendiment d'aplicacions, como son VisualVM y Mission Control. Una instalació de JDK ya conté un JRE dins del seus directoris.
 
 JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de Java. Conté a la Maquina Virtual de Java i altres ferramentes que permiteixen l'execució de les aplicacions Java. JRE no incorpora compiladors ni ferramentes per a desarrotllar les aplicacions Java, nomes incorpora les ferramentes per a executarles.
 
