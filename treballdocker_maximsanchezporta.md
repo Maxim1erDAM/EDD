@@ -128,9 +128,16 @@ Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubu
 ## 6.-Instalar extensions de Java en VSCODE i utilitzar ferramentes de JRE o JDK
 
 Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vscode-java-pack".
-A partir de la font de vscode de :https://aka.ms/vscode-java-installer-win podem descarregar també el Visual Studio Code Java Pack Installer :https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe
+A partir de la font de vscode de :https://aka.ms/vscode-java-installer-win
 
-El directori de Windows al instalar JRE sol ser:
+Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe
+
+
+*Si tenim algun problema en VSCODE o en les extensions, ho he solventat amb fer click en l'opcio "Buscar actualizaciones"
+
+![Imatge](/imatges/solucioproblemesvscode.png)
+
+*El directori de Windows al instalar JRE sol ser:
 "C:\Program Files\java\versiodejava\", amb els directoris "C:\Program Files\java\versiodejava\bin" i "C:\Program Files\java\versiodejava\lib".
 
 
