@@ -152,10 +152,6 @@ El directori de Windows al instalar JRE 8 es: C:\Program Files\java\jre1.8.0_231
 
 ``Fem clic en "Insertar imagen de CD de las <<Guest Additions>>". Es montará la unitat de CDROM amb la ISO corresponent.``
 
->***`alumne@alumne-VirtualBox:/media/alumne$ `*** 
-
-cd /
-
 >***`alumne@alumne-VirtualBox:/media/alumne$ `***  
 
 cd /media/alumne/VBox_GAs_6.0.12/
