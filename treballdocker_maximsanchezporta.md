@@ -101,7 +101,7 @@ Descarreguem la versió del nostre sistema operatiu. (.exe per a Windows, .rpm p
 
 ![Imatge](/imatges/JREoJDK2.png)
 
-En Ubuntu per comandes podriem instalar el JRE  o JDK directament amb :
+En Ubuntu per comandes podriem instalar el JRE  o JDK amb la versió per defecte als repositoris d'Ubuntu, directament amb :
 sudo apt install default-jre
 sudo apt install default-jdk
 
