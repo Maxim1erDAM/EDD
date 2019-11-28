@@ -132,6 +132,9 @@ Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubu
 Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vscode-java-pack".
 A partir de la font de vscode de :https://aka.ms/vscode-java-installer-win
 
+
+![Imatge](/imatges/imatgevscodeexts.png)
+
 Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe
 
 
