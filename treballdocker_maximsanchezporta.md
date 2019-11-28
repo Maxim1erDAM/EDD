@@ -516,9 +516,13 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
 Como utilitzarlo en Ubuntu:
 
 Elegix un directori de treball i afegix un enllaç al repositorio RCS.
+
 >mkdir directori_de_treball
+
 >cd directori_de_treball
+
 >mkdir RCS
+
 >ln -s / home / Project / src / RCS RCS
       
 
@@ -535,11 +539,13 @@ Para revisar una particular versió anterior:
 >      co -r1.2 archivo.c
 
 Revisar per a no actualizar y bloquear:
+
 >     co -u file.c
 
 STATUS/HISTORY-historial/estado:
 
 Para ver la información del archivo:
+
 >      rlog -b archivo.c
 
 
