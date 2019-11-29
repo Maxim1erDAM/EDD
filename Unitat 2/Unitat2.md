@@ -19,7 +19,7 @@
 >
 >***[5.-Opcional. Instalació de Netbeans 11.1](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/Unitat2.md#5-opcional-instalaci%C3%B3-de-netbeans-111)***
 >
->***[6.-Compilar Java desde VSCODE](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-compilar-java-desde-vscode)***
+>***[6.-Compilar Java desde VSCODE](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/Unitat2.md#6-instalar-extensions-de-java-en-vscode-i-utilitzar-ferramentes-de-jre-o-jdk)***
 
 #    **-Activitat pràctica-**
 
