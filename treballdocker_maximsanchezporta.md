@@ -245,7 +245,7 @@ sudo apt install docker-ce
 ## 3.-Assignar contrasenya a root:
 
 
->***`Asignar contrasenya a root e iniciar contrasenya, en el meu cas "alumne" es el usuari de la maquina virtual`***
+>***`Assignar contrasenya a root e iniciar contrasenya, en el meu cas "alumne" es el usuari de la maquina virtual`***
 
 `USUARIO@USUARIO-VirtualBox:
 sudo passwd root`
