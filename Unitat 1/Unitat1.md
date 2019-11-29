@@ -4,7 +4,7 @@
 
 ###### Modified With                   ***[Dillinger.io](https://dillinger.io/ )***
 
-![La Gioconda (Wikipedia)](https://ladob.net/wp-content/uploads/2018/03/web-1935737_640.png) 
+![Programació (EDD)](https://ladob.net/wp-content/uploads/2018/03/web-1935737_640.png) 
 
 
 Els informátics utilitzem cualsevol eina que mos ajude a treballar millor a l'hora de programar
