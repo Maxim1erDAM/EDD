@@ -101,7 +101,7 @@ Información:
 
 #### Ejercici 3. Compilació i execució de codi.
 
-    Sobre la pràctica 3 del butlletí de pràctiques, modifiqueu els diferents programes d’Hola Món enels diferents llenguatges de programació per a que mostre el missatge Holaatots! Emdiuen... iestudie1rdeDAM! , reemplaçant els ... amb el vostre nom. Incloeu a la memòria el codimodificat i els passos seguits per executar-los, i si és el cas, per compilar-los.
+    Sobre la pràctica 3 del butlletí de pràctiques, modifiqueu els diferents programes d’Hola Món enels diferents llenguatges de programació per a que mostre el missatge Hola a tots! Em diuen... i estudie 1r de DAM! , reemplaçant els ... amb el vostre nom. Incloeu a la memòria el codi modificat i els passos seguits per executar-los, i si és el cas, per compilar-los.
     
 *********`Ejercicio 3. `*********
 
