@@ -172,7 +172,7 @@ Compilando Java en Terminal
 
 Ejecutando Java en Terminal
 
-    java HelloWorld.class (resultado del compilado)
+    java HelloWorld (execució del compilat)
 
 ![Imatge](/imatges/compilariejecutarjavaSOLUCION.png)
 
