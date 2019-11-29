@@ -13,17 +13,17 @@
 
 
 >### UNITAT 3. Sistemes de control de versions.
->***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#1-configurar-virtualbox)***
+>***[1.-Configurar VirtualBox.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#1-configurar-virtualbox)***
 >
->***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
+>***[2.-Com instalar docker en Ubuntu 18 o altres distribucions de Ubuntu.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#2-com-instalar-docker-en-ubuntu-18-o-altres-distribucions-de-ubuntu)***
 >
->***[3.-Assignar contrasenya a root.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3-assignar-contrasenya-a-root)***
+>***[3.-Assignar contrasenya a root.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#3-assignar-contrasenya-a-root)***
 >
->***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-configurar-docker)***
+>***[4.-Configurar docker.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#4-configurar-docker)***
 >
->***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
+>***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 >
->***[6.-Práctica RCS - Revision Control System for Linux/UNIX .](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix)***
+>***[6.-Práctica RCS - Revision Control System for Linux/UNIX .](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix)***
 
 #    **-Activitat pràctica-**
 
