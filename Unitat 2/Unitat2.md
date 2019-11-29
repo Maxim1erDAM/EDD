@@ -18,7 +18,7 @@
 >
 >***[2.-Com instalar extensions en VSCODE .](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/Unitat2.md#2-com-instalar-extensions-en-vscode)***
 >
->***[3.-Programar en JAVA.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3-programar-en-java)***
+>***[3.-Programar en JAVA.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/Unitat2.md#3-programar-en-java)***
 >
 >***[4.-Instalació Java JRE o JDK.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#4-java-jre-o-jdk)***
 >
