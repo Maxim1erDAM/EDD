@@ -4,7 +4,7 @@
 
 ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
-![Docker](/imatges/imatge0.png)
+![Docker](imatges/imatge0.png)
 
 ##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
@@ -43,7 +43,7 @@
 
 ## -Com activar el portafolis i "Arrastrar i soltar".
 
-![Imatge](/imatges/imatge6.png)
+![Imatge](imatges/imatge6.png)
 
 `Asignem "Bidireccional" en els dos casos.`
 
@@ -282,17 +282,17 @@ $docker start svn-server
 
 ## `Accedim al servidor amb el usuari administrador "admin" i contraseña 'admin' per defecte per a subversion.`
 
-![Imatge](/imatges/imatge1.png)
+![Imatge](imatges/imatge1.png)
 
 ## `Accedim a la pantalla de creació de usuaris.`
 
-![Imatge](/imatges/imatge2.png)
+![Imatge](imatges/imatge2.png)
 
-![Imatge](/imatges/imatge3.png)
+![Imatge](imatges/imatge3.png)
 
 ## `Crearem un usuari , hem creat "alumne123." i afegim tots els permisos en el cas de que siga administrador.`
 
-![Imatge](/imatges/imatge4.png)
+![Imatge](imatges/imatge4.png)
 
 
 >***`Donar permisos i accesibilitat al usuari, a este enllaç de host en la red local i crear els seus directoris de tags,trunk i branches.*Desde usuari root amb password asignada amb passwd.   `***
@@ -333,7 +333,7 @@ A alumne123./trunk
 A alumne123./branches
 Revisión obtenida: 1
 
-![Imatge](/imatges/imatge5.png)
+![Imatge](imatges/imatge5.png)
 
 ***`La contraseña de subversion edge la demana gráficament, és la que es troba asignada per defecte per a l'administració del servidor en apache de subversion edge.`***
 
@@ -343,7 +343,7 @@ Revisión obtenida: 1
 
 ***`Instalem GIT des dels repositoris d'Ubuntu. Li asignem una configuració básica d'usuari de GIT.`***
 
-![Imatge](/imatges/imatge7.png)
+![Imatge](imatges/imatge7.png)
 
 ***`Podem asignar l'editor per defecte amb la línea`*** 
 
@@ -353,13 +353,13 @@ sudo git config --global core.editor "nomdeeditor"
 
 sudo git config --list
 
-![Imatge](/imatges/imatge8.png)
+![Imatge](imatges/imatge8.png)
 
 ***`Com crear un commit, al modificar o crear o eliminar archius:`*** 
 
 Eixemple: sudo git commit -a -m "Primer Commit"
 
-![Imatge](/imatges/imatge9.png)
+![Imatge](imatges/imatge9.png)
 
 ***`Mostrar commits creats:`*** 
 
@@ -382,7 +382,7 @@ Eixemple: sudo sudo git commit -a -m "nous canvis"
 
  sudo git log
 
-![Imatge](/imatges/imatge11.png)
+![Imatge](imatges/imatge11.png)
 
 
 
