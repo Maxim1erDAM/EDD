@@ -157,4 +157,4 @@ Información:
     
 >`Ejecutando Java en Terminal`
     
-    java HelloWorld.class (resultado del compilado)
+    java HelloWorld (resultado del compilado)
