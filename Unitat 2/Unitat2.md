@@ -86,11 +86,11 @@ Instalem desde la font oficial d'Oracle el JRE o el JDK de Java:
 Nosaltres descarregarem el JRE. Pero podem utilitzar un dels dos.
 Elegim el paquet JRE o el JDK.
 
-![Imatge](/imatges/JREoJDK.png)
+![Imatge](imatges/JREoJDK.png)
 
 Descarreguem la versió del nostre sistema operatiu. (.exe per a Windows, .rpm per a Linux, tinguent en compte si l'equip es i586-x86 o bé x64)
 
-![Imatge](/imatges/JREoJDK2.png)
+![Imatge](imatges/JREoJDK2.png)
 
 En Ubuntu per comandes podriem instalar el JRE o JDK amb la versió per defecte als repositoris d'Ubuntu, directament amb :
 
@@ -113,13 +113,13 @@ Anem a l'apartat d'extensions de Visual Studio Code i instalem "@id:vscjava.vsco
 A partir de la font de vscode de :https://aka.ms/vscode-java-installer-win
 
 
-![Imatge](/imatges/javaextvscodepack.png)
+![Imatge](imatges/javaextvscodepack.png)
 
 Podem descarregar també el Visual Studio Code Java Pack Installer :https://vscjavaci.blob.core.windows.net/vscodejavainstaller/release/0.2.1/VSCodeJavaInstaller-online-win-0.2.1.exe
 
 *Si tenim algun problema en VSCODE o en les extensions, ho he solventat amb fer click en l'opcio "Buscar actualizaciones"
 
-![Imatge](/imatges/solucioproblemesvscode.png)
+![Imatge](imatges/solucioproblemesvscode.png)
 
 *El directori de Windows al instalar JRE sol ser:
 
@@ -150,4 +150,4 @@ Ejecutando Java en Terminal
 
     java HelloWorld (execució del compilat)
 
-![Imatge](/imatges/compilariejecutarjavaSOLUCION.png)
+![Imatge](imatges/compilariejecutarjavaSOLUCION.png)
