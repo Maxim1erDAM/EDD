@@ -23,7 +23,7 @@
 >
 >***[5.-Com treballar amb GIT de Ubuntu de manera local.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#5---com-treballar-amb-git-de-ubuntu-de-manera-local)***
 >
->***[6.-Práctica RCS - Revision Control System for Linux/UNIX .](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix)***
+>***[6.-Práctica RCS - Revision Control System for Linux/UNIX.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%203/Unitat3.md#6-pr%C3%A1ctica-rcs---revision-control-system-for-linuxunix)***
 
 #    **-Activitat pràctica-**
 
