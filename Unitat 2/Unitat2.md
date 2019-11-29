@@ -16,7 +16,7 @@
 >
 >***[1.-Com instalar VSCODE en Ubuntu 18.](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/Unitat2.md#1-com-instalar-vscode-en-ubuntu-18)***
 >
->***[2.-Com instalar extensions en VSCODE .](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#2-com-instalar-extensions-en-vscode)***
+>***[2.-Com instalar extensions en VSCODE .](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/Unitat2.md#2-com-instalar-extensions-en-vscode)***
 >
 >***[3.-Programar en JAVA.](https://github.com/Maxim1erDAM/EDD/blob/master/treballdocker_maximsanchezporta.md#3-programar-en-java)***
 >
