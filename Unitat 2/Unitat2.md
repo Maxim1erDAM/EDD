@@ -105,7 +105,7 @@ Per a descomprimir el .tar.gz  del paquet de Java, per si el descarreguem en Ubu
 ## 5. Opcional. Instalació de NetBeans 11.1 
 
 
->[>Redirigir a Guia d’instal.lació de NetBeans 11.1. ](https://raw.githubusercontent.com/Maxim1erDAM/EDD/master/Unitat%202/NetbeansInstalar.pdf)
+>[>Redirigir a Guia d’instal.lació de NetBeans 11.1. ](https://github.com/Maxim1erDAM/EDD/blob/master/Unitat%202/NetbeansInstalar.pdf)
 
 ## 6.-Instalar extensions de Java en VSCODE i utilitzar ferramentes de JRE o JDK
 
