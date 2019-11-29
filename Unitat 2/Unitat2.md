@@ -1,12 +1,7 @@
 # **1ER DAM. Desarrotllament D'Aplicacions Multiplataforma. EDD. Entorns de Desenvolupament.**
 
-# **Docker, Contenidors, Servidor CollabNet Subversion Edge, Git i RCS**
-
 ***2019-Editat amb [VisualStudioCode](https://code.visualstudio.com/) per a Windows, Linux i Mac.***
 
-![Docker](/imatges/imatge0.png)
-
-##### DOCKER. Una plataforma oberta per a construir, envíar i executar aplicacions distribuïdes. 
 
 # Index:
 
